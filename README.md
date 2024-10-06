@@ -129,7 +129,7 @@ Let ![E_r^{p,q}](https://latex.codecogs.com/svg.image?E_r^{p,q}) denote the ![r]
 
 The persistence intervals for homology classes near the singular set ![\Sigma](https://latex.codecogs.com/svg.image?\Sigma) are influenced by the homology of the link ![L(\Sigma)](https://latex.codecogs.com/svg.image?L(\Sigma)) and the differentials in the spectral sequence. Formally, the persistence intervals in dimension ![k](https://latex.codecogs.com/svg.image?k) are given by:
 
-![P_k(\Sigma) = \left\{ [b_i, d_i) \mid b_i \text{ and } d_i \text{ are determined by } H_k(L(\Sigma)) \text{ and the differentials } d_r \right\}](https://latex.codecogs.com/svg.image?P_k(\Sigma)%20=%20\left\{%20[b_i,%20d_i)\%20mid%20b_i%20\text{and}%20d_i%20\text{are%20determined%20by}%20H_k(L(\Sigma))%20\text{and%20the%20differentials}%20d_r\right\})
+![P_k(\Sigma)](https://latex.codecogs.com/svg.image?P_k(\Sigma)) = ![\left\{ [b_i, d_i) \mid](https://latex.codecogs.com/svg.image?\left\{%20[b_i,%20d_i)%20\mid) b_i and d_i are determined by ![H_k(L(\Sigma))](https://latex.codecogs.com/svg.image?H_k(L(\Sigma))) and the differentials ![d_r](https://latex.codecogs.com/svg.image?d_r) \}.
 
 This formulation reflects the fact that the homological features near singularities are governed by the topology of the link and evolve according to the spectral sequence differentials.
 
