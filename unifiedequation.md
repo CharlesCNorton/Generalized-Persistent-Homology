@@ -48,9 +48,9 @@ For smooth spaces, this filtration can be induced using various methods, includi
 
 ##### Example 1.1: Vietoris-Rips Filtration
 
-Let \( X_{\text{smooth}} \subset \mathbb{R}^n \) be a finite point cloud. The Vietoris-Rips complex \( VR(X_{\text{smooth}}, t) \) at scale \( t \) is the simplicial complex formed by taking all subsets of points in \( X_{\text{smooth}} \) whose pairwise distances are less than or equal to \( t \). As \( t \) increases, more simplices are added to the complex, corresponding to larger clusters of points coming together.
+Let ![X_{\text{smooth}} \subset \mathbb{R}^n](https://latex.codecogs.com/svg.image?X_{\text{smooth}}%20\subset%20\mathbb{R}^n) be a finite point cloud. The Vietoris-Rips complex ![VR(X_{\text{smooth}}, t)](https://latex.codecogs.com/svg.image?VR(X_{\text{smooth}},%20t)) at scale ![t](https://latex.codecogs.com/svg.image?t) is the simplicial complex formed by taking all subsets of points in ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) whose pairwise distances are less than or equal to ![t](https://latex.codecogs.com/svg.image?t). As ![t](https://latex.codecogs.com/svg.image?t) increases, more simplices are added to the complex, corresponding to larger clusters of points coming together.
 
-The filtration \( \{ VR(X_{\text{smooth}}, t) \}_{t \geq 0} \) describes how the topology of \( X_{\text{smooth}} \) evolves as we zoom out and consider larger neighborhoods of points. Homological features (connected components, loops, voids) appear and disappear over different scales.
+The filtration ![\{ VR(X_{\text{smooth}}, t) \}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{VR(X_{\text{smooth}},%20t)\}_{t%20\geq%200}) describes how the topology of ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) evolves as we zoom out and consider larger neighborhoods of points. Homological features (connected components, loops, voids) appear and disappear over different scales.
 
 ##### Lemma 1.1: Persistence for Smooth Spaces
 
