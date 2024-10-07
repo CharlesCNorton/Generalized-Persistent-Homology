@@ -54,13 +54,13 @@ The filtration ![\{ VR(X_{\text{smooth}}, t) \}_{t \geq 0}](https://latex.codeco
 
 ##### Lemma 1.1: Persistence for Smooth Spaces
 
-Let \( X_{\text{smooth}} \) be a smooth region of \( X \), equipped with a filtration \( \{ X_t \}_{t \geq 0} \) induced by a Vietoris-Rips complex or a related construction. The persistent homology in dimension \( k \), denoted \( PH_k(X_{\text{smooth}}) \), consists of a collection of persistence intervals of the form:
-\[
-PH_k(X_{\text{smooth}}) = \bigcup \left\{ [b_i, d_i) \mid H_k \text{ class born at } b_i \text{ and dies at } d_i \right\}.
-\]
-Each interval \( [b_i, d_i) \) corresponds to a homology class in dimension \( k \), where \( b_i \) is the birth time and \( d_i \) is the death time of the feature.
+Let ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) be a smooth region of ![X](https://latex.codecogs.com/svg.image?X), equipped with a filtration ![\{ X_t \}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{X_t\}_{t%20\geq%200}) induced by a Vietoris-Rips complex or a related construction. The persistent homology in dimension ![k](https://latex.codecogs.com/svg.image?k), denoted ![PH_k(X_{\text{smooth}})](https://latex.codecogs.com/svg.image?PH_k(X_{\text{smooth}})), consists of a collection of persistence intervals of the form:
 
-Proof: This result follows from the standard theory of persistent homology as applied to smooth spaces. The filtration \( \{ X_t \} \) induces a sequence of simplicial complexes, and the homology groups \( H_k(X_t) \) evolve as simplices are added to the complex. The persistence intervals \( [b_i, d_i) \) track the birth and death of homological features as \( t \) increases. This process is well-defined for smooth spaces, where the topological structure is well-behaved and admits standard computational techniques.
+![PH_k(X_{\text{smooth}}) = \bigcup \left\{ [b_i, d_i) \mid H_k \text{ class born at } b_i \text{ and dies at } d_i \right\}](https://latex.codecogs.com/svg.image?PH_k(X_{\text{smooth}})%20=%20\bigcup%20\left\{%20[b_i,%20d_i)%20\mid%20H_k%20\text{class%20born%20at}%20b_i%20\text{and%20dies%20at}%20d_i%20\right\})
+
+Each interval ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) corresponds to a homology class in dimension ![k](https://latex.codecogs.com/svg.image?k), where ![b_i](https://latex.codecogs.com/svg.image?b_i) is the birth time and ![d_i](https://latex.codecogs.com/svg.image?d_i) is the death time of the feature.
+
+**Proof**: This result follows from the standard theory of persistent homology as applied to smooth spaces. The filtration ![\{ X_t \}](https://latex.codecogs.com/svg.image?\{X_t\}) induces a sequence of simplicial complexes, and the homology groups ![H_k(X_t)](https://latex.codecogs.com/svg.image?H_k(X_t)) evolve as simplices are added to the complex. The persistence intervals ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) track the birth and death of homological features as ![t](https://latex.codecogs.com/svg.image?t) increases. This process is well-defined for smooth spaces, where the topological structure is well-behaved and admits standard computational techniques.
 
 ##### Corollary 1.1: Stability of Persistent Homology in Smooth Spaces
 
