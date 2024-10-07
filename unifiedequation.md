@@ -155,7 +155,7 @@ Let <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> be the lin
 
 ##### Proof of Lemma 3.1
 
-The link \( L(p) \) is a lower-dimensional space that provides a "snapshot" of the topology near the singularity. The homology groups \( H_k(L(p)) \) describe the topological features of the link, and as we move through the filtration, these features either persist or disappear. The behavior of the homology near the singularity is thus determined by the homology of the link and the filtration of \( X \).
+The link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> is a lower-dimensional space that provides a "snapshot" of the topology near the singularity. The homology groups <img src="https://latex.codecogs.com/svg.image?\bg{white}H_k(L(p))" /> describe the topological features of the link, and as we move through the filtration, these features either persist or disappear. The behavior of the homology near the singularity is thus determined by the homology of the link and the filtration of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />.
 
 ---
 
