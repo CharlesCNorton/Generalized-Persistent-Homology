@@ -13,7 +13,7 @@ where:
 - ![X_{\text{non-smooth}}](https://latex.codecogs.com/svg.image?X_{\text{non-smooth}}) is the non-smooth part, which consists of regions where ![X](https://latex.codecogs.com/svg.image?X) exhibits sharp, non-differentiable features, such as polyhedral complexes or piecewise-linear structures.
 - ![\Sigma \subset X](https://latex.codecogs.com/svg.image?\Sigma%20\subset%20X) is the singular set, which contains points where ![X](https://latex.codecogs.com/svg.image?X) exhibits topological singularities. Singularities can arise in algebraic varieties (e.g., nodes, cusps), stratified spaces, or spaces with non-manifold points.
 
-We aim to compute the persistent homology \( PH_k(X) \) of the space \( X \) in dimension \( k \). Persistent homology tracks the birth and death of topological features (such as connected components, loops, voids, etc.) over a filtration of the space, providing a description of the topological changes across scales.
+We aim to compute the persistent homology ![PH_k(X)](https://latex.codecogs.com/svg.image?PH_k(X)) of the space ![X](https://latex.codecogs.com/svg.image?X) in dimension ![k](https://latex.codecogs.com/svg.image?k). Persistent homology tracks the birth and death of topological features (such as connected components, loops, voids, etc.) over a filtration of the space, providing a description of the topological changes across scales.
 
 #### 0.1 Filtrations
 
