@@ -221,13 +221,13 @@ By analyzing the action of the filtration on regions of high curvature, we obtai
 
 ##### Corollary 4.1: Geometric Stability of Persistent Homology
 
-The persistent homology of a space with high curvature regions is stable under small perturbations of the curvature function \( \kappa(x) \). Changes in the curvature result in correspondingly small changes in the persistence intervals, ensuring that the global topological structure of the space is preserved.
+The persistent homology of a space with high curvature regions is stable under small perturbations of the curvature function <img src="https://latex.codecogs.com/svg.image?\bg{white}\kappa(x)" />. Changes in the curvature result in correspondingly small changes in the persistence intervals, ensuring that the global topological structure of the space is preserved.
 
 ---
 
 #### 5. Unified Equation for Persistent Homology of Stratified Spaces
 
-We now combine the contributions from the smooth, non-smooth, and singular regions of \( X \) to form the unified equation for the persistent homology of the stratified space \( X \).
+We now combine the contributions from the smooth, non-smooth, and singular regions of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> to form the unified equation for the persistent homology of the stratified space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />.
 
 ##### Theorem 5.1: Unified Persistent Homology Equation
 
