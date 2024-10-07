@@ -147,11 +147,11 @@ For each singular point <img src="https://latex.codecogs.com/svg.image?\bg{white
 
 Classical homology often fails to capture the topology near singular points because it does not account for the complexity of the singular set. To remedy this, we use intersection homology, which extends classical homology by controlling how chains interact with the singular strata.
 
-Intersection homology is parameterized by a perversity \( \bar{p} \), which determines how simplicial chains are allowed to intersect the singular set. Formally, the intersection homology groups \( IH_k(X; \bar{p}) \) are defined as the homology groups of the complex of allowable chains, where the chains must satisfy constraints imposed by the perversity.
+Intersection homology is parameterized by a perversity <img src="https://latex.codecogs.com/svg.image?\bg{white}\bar{p}" />, which determines how simplicial chains are allowed to intersect the singular set. Formally, the intersection homology groups <img src="https://latex.codecogs.com/svg.image?\bg{white}IH_k(X;%20\bar{p})" /> are defined as the homology groups of the complex of allowable chains, where the chains must satisfy constraints imposed by the perversity.
 
 ##### Lemma 3.1: Homology of Links of Singularities
 
-Let \( L(p) \) be the link of a singular point \( p \in \Sigma \). The homology groups \( H_k(L(p)) \) encode the local topology near the singularity. The persistent homology near the singularity is governed by the homology of the link, and the evolution of homological features is determined by how the filtration progresses through the space.
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> be the link of a singular point <img src="https://latex.codecogs.com/svg.image?\bg{white}p%20\in%20\Sigma" />. The homology groups <img src="https://latex.codecogs.com/svg.image?\bg{white}H_k(L(p))" /> encode the local topology near the singularity. The persistent homology near the singularity is governed by the homology of the link, and the evolution of homological features is determined by how the filtration progresses through the space.
 
 ##### Proof of Lemma 3.1
 
