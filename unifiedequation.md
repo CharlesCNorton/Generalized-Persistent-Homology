@@ -91,10 +91,10 @@ These conditions ensure that the discrete Morse function encodes the topological
 
 ##### Definition 2.3: Critical Simplices
 
-A critical simplex under a discrete Morse function \( f \) is a simplex \( \sigma^p \in K \) such that:
+A critical simplex under a discrete Morse function <img src="https://latex.codecogs.com/svg.image?\bg{white}f" /> is a simplex <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^p%20\in%20K" /> such that:
 
-- There is no face \( \tau^{p-1} \subset \sigma^p \) with \( f(\tau^{p-1}) \geq f(\sigma^p) \).
-- There is no coface \( \eta^{p+1} \superset \sigma^p \) with \( f(\eta^{p+1}) \leq f(\sigma^p) \).
+- There is no face <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau^{p-1}%20\subset%20\sigma^p" /> with <img src="https://latex.codecogs.com/svg.image?\bg{white}f(\tau^{p-1})%20\geq%20f(\sigma^p)" />.
+- There is no coface <img src="https://latex.codecogs.com/svg.image?\bg{white}\eta^{p+1}%20\supset%20\sigma^p" /> with <img src="https://latex.codecogs.com/svg.image?\bg{white}f(\eta^{p+1})%20\leq%20f(\sigma^p)" />.
 
 Critical simplices correspond to important topological features of the space:
 - Critical 0-simplices correspond to connected components.
