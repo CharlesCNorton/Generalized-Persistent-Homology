@@ -107,13 +107,13 @@ Critical simplices correspond to important topological features of the space:
 
 ##### Lemma 2.1: Critical Simplices and Homological Features
 
-Let \( K \) be a simplicial complex representing the non-smooth region \( X_{\text{non-smooth}} \), and let \( f: K \to \mathbb{R} \) be a discrete Morse function. Each critical \( k \)-simplex \( \sigma^k \in K \) corresponds to a \( k \)-dimensional homology class. The persistence of the homological feature associated with \( \sigma^k \) is given by:
-\[
-\tau_k(\sigma^k) = f(\sigma^{k+1}) - f(\sigma^k),
-\]
-where \( \sigma^{k+1} \) is a critical \( (k+1) \)-dimensional simplex that annihilates the homology class corresponding to \( \sigma^k \).
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}K" /> be a simplicial complex representing the non-smooth region <img src="https://latex.codecogs.com/svg.image?\bg{white}X_{\text{non-smooth}}" />, and let <img src="https://latex.codecogs.com/svg.image?\bg{white}f:%20K%20\to%20\mathbb{R}" /> be a discrete Morse function. Each critical <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />-simplex <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^k%20\in%20K" /> corresponds to a <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />-dimensional homology class. The persistence of the homological feature associated with <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^k" /> is given by:
 
-Proof: The persistence interval \( \tau_k(\sigma^k) \) represents the lifetime of the homology class associated with \( \sigma^k \). Since \( f \) is a discrete Morse function, the critical simplices of \( f \) correspond to the birth of homology classes. The death of the homology class occurs when the critical coface \( \sigma^{k+1} \) fills in the topological feature, causing the homology class to disappear. The persistence of the class is the difference between the values of \( f \) on the critical simplices.
+<img src="https://latex.codecogs.com/svg.image?\bg{white}\tau_k(\sigma^k)%20=%20f(\sigma^{k+1})%20-%20f(\sigma^k)" />,
+
+where <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^{k+1}" /> is a critical <img src="https://latex.codecogs.com/svg.image?\bg{white}(k+1)" />-dimensional simplex that annihilates the homology class corresponding to <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^k" />.
+
+**Proof**: The persistence interval <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau_k(\sigma^k)" /> represents the lifetime of the homology class associated with <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^k" />. Since <img src="https://latex.codecogs.com/svg.image?\bg{white}f" /> is a discrete Morse function, the critical simplices of <img src="https://latex.codecogs.com/svg.image?\bg{white}f" /> correspond to the birth of homology classes. The death of the homology class occurs when the critical coface <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^{k+1}" /> fills in the topological feature, causing the homology class to disappear. The persistence of the class is the difference between the values of <img src="https://latex.codecogs.com/svg.image?\bg{white}f" /> on the critical simplices.
 
 ##### Example 2.2: Persistence in a 2D Polyhedral Complex
 
