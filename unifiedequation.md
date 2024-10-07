@@ -4,14 +4,14 @@
 
 #### 0. Preliminaries and Notation
 
-Let \( X \) be a topological space that may be decomposed into distinct stratified regions. These regions can be categorized into:
-\[
-X = X_{\text{smooth}} \cup X_{\text{non-smooth}} \cup \Sigma,
-\]
+Let ![X](https://latex.codecogs.com/svg.image?X) be a topological space that may be decomposed into distinct stratified regions. These regions can be categorized into:
+
+![X = X_{\text{smooth}} \cup X_{\text{non-smooth}} \cup \Sigma](https://latex.codecogs.com/svg.image?X%20=%20X_{\text{smooth}}%20\cup%20X_{\text{non-smooth}}%20\cup%20\Sigma)
+
 where:
-- \( X_{\text{smooth}} \) is the smooth part of the space, which consists of regions where \( X \) admits a smooth differentiable structure.
-- \( X_{\text{non-smooth}} \) is the non-smooth part, which consists of regions where \( X \) exhibits sharp, non-differentiable features, such as polyhedral complexes or piecewise-linear structures.
-- \( \Sigma \subset X \) is the singular set, which contains points where \( X \) exhibits topological singularities. Singularities can arise in algebraic varieties (e.g., nodes, cusps), stratified spaces, or spaces with non-manifold points.
+- ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) is the smooth part of the space, which consists of regions where ![X](https://latex.codecogs.com/svg.image?X) admits a smooth differentiable structure.
+- ![X_{\text{non-smooth}}](https://latex.codecogs.com/svg.image?X_{\text{non-smooth}}) is the non-smooth part, which consists of regions where ![X](https://latex.codecogs.com/svg.image?X) exhibits sharp, non-differentiable features, such as polyhedral complexes or piecewise-linear structures.
+- ![\Sigma \subset X](https://latex.codecogs.com/svg.image?\Sigma%20\subset%20X) is the singular set, which contains points where ![X](https://latex.codecogs.com/svg.image?X) exhibits topological singularities. Singularities can arise in algebraic varieties (e.g., nodes, cusps), stratified spaces, or spaces with non-manifold points.
 
 We aim to compute the persistent homology \( PH_k(X) \) of the space \( X \) in dimension \( k \). Persistent homology tracks the birth and death of topological features (such as connected components, loops, voids, etc.) over a filtration of the space, providing a description of the topological changes across scales.
 
