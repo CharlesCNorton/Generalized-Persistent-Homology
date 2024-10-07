@@ -317,9 +317,9 @@ While the unified equation provides a comprehensive framework for analyzing pers
 The unified framework for persistent homology developed in this work provides a powerful tool for analyzing the topology of stratified spaces. By integrating classical homology, discrete Morse theory, intersection homology, and spectral sequences, we have developed a comprehensive approach to persistent homology that captures the full complexity of spaces with smooth, non-smooth, and singular regions.
 
 The unified equation:
-\[
-PH_k(X) = PH_k(X_{\text{smooth}}) \cup \left( \sum_{\sigma^k \in X_{\text{non-smooth}}} \tau_k(\sigma^k) \right) \cup \left( \bigcup_{p \in \Sigma} PH_k(L(p)) \right),
-\]
+
+<img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X)%20=%20PH_k(X_{\text{smooth}})%20\cup%20\left(\sum_{\sigma^k%20\in%20X_{\text{non-smooth}}}%20\tau_k(\sigma^k)\right)%20\cup%20\left(\bigcup_{p%20\in%20\Sigma}%20PH_k(L(p))\right)" />
+
 provides a rigorous, formal description of how topological features evolve across different scales in these spaces, offering both theoretical guarantees and practical methods for computing persistent homology in real-world applications.
 
 Future work will focus on refining these methods, improving computational efficiency, and extending the framework to new areas of mathematics and applied science.
