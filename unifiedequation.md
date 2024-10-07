@@ -64,7 +64,7 @@ Each interval ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) c
 
 ##### Corollary 1.1: Stability of Persistent Homology in Smooth Spaces
 
-The persistence intervals ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) computed for a smooth space ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) are stable under small perturbations of the input data. That is, if the underlying point cloud or simplicial complex is perturbed by a small amount, the resulting persistence intervals change only slightly. This stability is formalized by the bottleneck distance between persistence diagrams, which measures the similarity between the intervals of two different filtrations.
+The persistence intervals ![\left[ b_i, d_i \right)](https://latex.codecogs.com/svg.image?\left[b_i,%20d_i\right)) computed for a smooth space ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) are stable under small perturbations of the input data. That is, if the underlying point cloud or simplicial complex is perturbed by a small amount, the resulting persistence intervals change only slightly. This stability is formalized by the bottleneck distance between persistence diagrams, which measures the similarity between the intervals of two different filtrations.
 
 ---
 
