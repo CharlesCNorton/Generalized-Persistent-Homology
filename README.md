@@ -210,7 +210,8 @@ The link of the nodal singularity ![L(p)](https://latex.codecogs.com/svg.image?L
 
 - Persistent Homology of the Smooth Part: Away from the singular point, the variety behaves like a smooth surface, and the persistent homology is governed by classical homology theory.
 - Persistent Homology Near the Singular Point: Near the nodal singularity, the homology classes are influenced by the link ![L(p)](https://latex.codecogs.com/svg.image?L(p)). The persistence intervals for homology classes near the singularity are given by:
-![P_k(\Sigma) = \left\{ [b_i, d_i) \mid \text{determined by the spectral sequence and the link } L(p) \right\}](https://latex.codecogs.com/svg.image?P_k(\Sigma)%20=%20\left\{[b_i,%20d_i)\%20mid%20\text{determined%20by%20the%20spectral%20sequence%20and%20the%20link}%20L(p)%20\right\}).
+![P_k(\Sigma)](https://latex.codecogs.com/svg.image?P_k(\Sigma)) = ![\left\{ [b_i, d_i) \mid](https://latex.codecogs.com/svg.image?\left\{%20[b_i,%20d_i)%20\mid) determined by the spectral sequence and the link ![L(p)](https://latex.codecogs.com/svg.image?L(p)) \}.
+
 These intervals reflect the interaction between the homology of the smooth part of the variety and the topological structure of the singular point.
 
 ---
