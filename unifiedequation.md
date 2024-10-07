@@ -40,11 +40,11 @@ We will now proceed to develop the formal theory for computing ![PH_k(X)](https:
 
 ##### Definition 1.1: Filtration on Smooth Regions
 
-Let \( X_{\text{smooth}} \subseteq X \) be the smooth part of the space \( X \), which admits a differentiable structure. A filtration \( \{ X_t \}_{t \geq 0} \) on \( X_{\text{smooth}} \) is a nested sequence of subspaces such that:
-\[
-X_{t_1} \subseteq X_{t_2} \quad \text{for all} \quad t_1 \leq t_2.
-\]
-For smooth spaces, this filtration can be induced using various methods, including the Vietoris-Rips complex, the Cech complex, or the alpha complex, which are commonly used in persistent homology to construct simplicial approximations of the space at different scales.
+Let ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) be the smooth part of the space ![X](https://latex.codecogs.com/svg.image?X), which admits a differentiable structure. A filtration ![\{ X_t \}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{X_t\}_{t%20\geq%200}) on ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) is a nested sequence of subspaces such that:
+
+![X_{t_1} \subseteq X_{t_2} \quad \text{for all} \quad t_1 \leq t_2](https://latex.codecogs.com/svg.image?X_{t_1}%20\subseteq%20X_{t_2}%20\quad%20\text{for%20all}%20\quad%20t_1%20\leq%20t_2)
+
+For smooth spaces, this filtration can be induced using various methods, including the Vietoris-Rips complex, the Čech complex, or the alpha complex, which are commonly used in persistent homology to construct simplicial approximations of the space at different scales.
 
 ##### Example 1.1: Vietoris-Rips Filtration
 
