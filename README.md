@@ -5,8 +5,6 @@
 
 **Last Updated:** October 6th, 2024
 
-Introduction
-
 In modern topological data analysis (TDA), persistent homology has emerged as a powerful tool for extracting and understanding the underlying topological features of complex spaces. By studying how homological features such as connected components, cycles, and voids appear and disappear across different scales, persistent homology allows us to capture the essence of spaces that exhibit intricate and high-dimensional structures.
 
 The problem of characterizing persistent homology becomes particularly challenging when the topological spaces in question are not simple manifolds but instead fractal-like, non-smooth, or singular in nature. These spaces—ranging from self-similar fractals such as the Sierpiński gasket, to non-smooth polyhedral complexes, and singular varieties like the Whitney umbrella—are characterized by recursive structures, sharp edges, or even topological singularities, making classical homology insufficient for capturing their complexity. In these cases, a more rigorous and nuanced approach is needed to compute and interpret persistent homology.
