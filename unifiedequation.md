@@ -117,7 +117,7 @@ where <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^{k+1}" /> 
 
 ##### Example 2.2: Persistence in a 2D Polyhedral Complex
 
-Consider a 2-dimensional polyhedral complex \( K \) formed by triangulating a surface with sharp edges. A discrete Morse function \( f: K \to \mathbb{R} \) assigns real values to the vertices, edges, and triangles of \( K \). Critical vertices (0-simplices) correspond to connected components, critical edges (1-simplices) correspond to loops, and critical triangles (2-simplices) correspond to voids. As the filtration progresses, these critical simplices give rise to persistent homology classes, and their persistence intervals \( \tau_k(\sigma^k) \) measure the duration of the topological feature.
+Consider a 2-dimensional polyhedral complex <img src="https://latex.codecogs.com/svg.image?\bg{white}K" /> formed by triangulating a surface with sharp edges. A discrete Morse function <img src="https://latex.codecogs.com/svg.image?\bg{white}f:%20K%20\to%20\mathbb{R}" /> assigns real values to the vertices, edges, and triangles of <img src="https://latex.codecogs.com/svg.image?\bg{white}K" />. Critical vertices (0-simplices) correspond to connected components, critical edges (1-simplices) correspond to loops, and critical triangles (2-simplices) correspond to voids. As the filtration progresses, these critical simplices give rise to persistent homology classes, and their persistence intervals <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau_k(\sigma^k)" /> measure the duration of the topological feature.
 
 ##### Lemma 2.2: Persistent Homology for Non-Smooth Spaces
 
