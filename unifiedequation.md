@@ -159,7 +159,7 @@ The link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> is a 
 
 ---
 
-#### Definition 3.3: Spectral Sequences in Stratified Spaces (Continued)
+#### Definition 3.3: Spectral Sequences in Stratified Spaces
 
 The spectral sequence is a multi-stage process for computing homology in complex spaces like stratified spaces. The spectral sequence associated with a stratified space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, particularly near the singular set <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" />, refines the calculation of homology by introducing successive approximations to capture the topology of the space, layer by layer.
 
@@ -252,7 +252,7 @@ By combining the contributions from the smooth, non-smooth, and singular regions
 
 ---
 
-### 6. Conclusion and Further Refinements (continued)
+### 6. Conclusion and Further Refinements
 
 The unified equation for the persistent homology of stratified spaces <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, encompassing smooth, non-smooth, and singular regions, is an essential extension of classical persistent homology. By carefully accounting for the contributions from smooth spaces, polyhedral or piecewise-linear spaces, and spaces with topological singularities, this framework provides a comprehensive and systematic way to analyze the evolution of topological features across a wide variety of geometrically complex spaces.
 
