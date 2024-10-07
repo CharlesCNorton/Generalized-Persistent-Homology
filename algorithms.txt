@@ -22,6 +22,8 @@ Output: Persistent homology near singularities
 
 5. Output persistence intervals for homology classes near Σ.
 
+Code implementation of Algorithm 1:
+
 import numpy as np
 from itertools import combinations
 
@@ -135,6 +137,8 @@ Output: Hybrid filtration { X_t } that transitions between regions
    X_t = X_t^smooth ∪ X_t^non-smooth ∪ X_t^Σ.
 
 6. Compute persistent homology using the hybrid filtration.
+
+Code implementation of Algorithm 2:
 
 import numpy as np
 import itertools
@@ -275,6 +279,8 @@ Output: Weighted bottleneck distance d_B^w(D1, D2)
    Minimize the supremum by adjusting the matching φ to find the optimal correspondence between points in D1 and D2 (or their mapping to the diagonal).
 
 6. Return the final weighted bottleneck distance d_B^w(D1, D2).
+
+Code implementation of Algorithm 3:
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
