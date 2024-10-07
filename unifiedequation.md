@@ -161,35 +161,35 @@ The link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> is a 
 
 #### Definition 3.3: Spectral Sequences in Stratified Spaces (Continued)
 
-The spectral sequence is a multi-stage process for computing homology in complex spaces like stratified spaces. The spectral sequence associated with a stratified space \( X \), particularly near the singular set \( \Sigma \), refines the calculation of homology by introducing successive approximations to capture the topology of the space, layer by layer.
+The spectral sequence is a multi-stage process for computing homology in complex spaces like stratified spaces. The spectral sequence associated with a stratified space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, particularly near the singular set <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" />, refines the calculation of homology by introducing successive approximations to capture the topology of the space, layer by layer.
 
-Let \( L(p) \) denote the link of the singularity \( p \in \Sigma \). A filtration \( \{ X_t \}_{t \geq 0} \) of the space \( X \) induces a filtration on the link \( L(p) \), where the link captures the local structure of the space in the neighborhood of the singularity. As we progress through the filtration, the topological features of \( L(p) \) evolve, and this evolution is captured by the spectral sequence:
-\[
-E_1^{p,q} \Rightarrow H_{p+q}(X),
-\]
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> denote the link of the singularity <img src="https://latex.codecogs.com/svg.image?\bg{white}p%20\in%20\Sigma" />. A filtration <img src="https://latex.codecogs.com/svg.image?\bg{white}\{X_t\}_{t%20\geq%200}" /> of the space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> induces a filtration on the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" />, where the link captures the local structure of the space in the neighborhood of the singularity. As we progress through the filtration, the topological features of <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> evolve, and this evolution is captured by the spectral sequence:
+
+<img src="https://latex.codecogs.com/svg.image?\bg{white}E_1^{p,q}%20\Rightarrow%20H_{p+q}(X)" />,
+
 where:
-- \( E_1^{p,q} \) represents the homology groups of the link \( L(p) \),
-- \( H_{p+q}(X) \) is the homology of \( X \) near the singularity.
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}E_1^{p,q}" /> represents the homology groups of the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" />,
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}H_{p+q}(X)" /> is the homology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> near the singularity.
 
 ##### Lemma 3.2: Persistent Homology from Spectral Sequences
 
-The persistent homology near the singularity \( p \in \Sigma \) is determined by the evolution of homology classes in the link \( L(p) \), as captured by the spectral sequence. Specifically, the birth and death times of homological features are governed by the differentials \( d_r \) in the spectral sequence. These differentials describe how homology classes at one stage of the filtration transition into or disappear in later stages.
+The persistent homology near the singularity <img src="https://latex.codecogs.com/svg.image?\bg{white}p%20\in%20\Sigma" /> is determined by the evolution of homology classes in the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" />, as captured by the spectral sequence. Specifically, the birth and death times of homological features are governed by the differentials <img src="https://latex.codecogs.com/svg.image?\bg{white}d_r" /> in the spectral sequence. These differentials describe how homology classes at one stage of the filtration transition into or disappear in later stages.
 
 The persistence intervals for homology classes near the singularity are given by:
-\[
-PH_k(\Sigma) = \bigcup_{p \in \Sigma} \left\{ [b_i, d_i) \mid H_k(L(p)) \text{ persists from } b_i \text{ to } d_i \right\},
-\]
-where \( H_k(L(p)) \) is the homology of the link, and \( [b_i, d_i) \) is the persistence interval of the corresponding homology class.
+
+<img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(\Sigma)%20=%20\bigcup_{p%20\in%20\Sigma}%20\left\{%20[b_i,%20d_i)%20\mid%20H_k(L(p))%20\text{%20persists%20from%20}%20b_i%20\text{%20to%20}%20d_i%20\right\}" />,
+
+where <img src="https://latex.codecogs.com/svg.image?\bg{white}H_k(L(p))" /> is the homology of the link, and <img src="https://latex.codecogs.com/svg.image?\bg{white}[b_i,%20d_i)" /> is the persistence interval of the corresponding homology class.
 
 ##### Proof of Lemma 3.2
 
-The spectral sequence associated with the filtration of \( X \) near the singularity \( p \) describes how homological features evolve as the filtration progresses. At each stage of the filtration, the differentials \( d_r \) may cause a homology class to die, corresponding to the disappearance of a homological feature. The persistence intervals are determined by analyzing when these homology classes are born and when they are annihilated by the differentials of the spectral sequence.
+The spectral sequence associated with the filtration of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> near the singularity <img src="https://latex.codecogs.com/svg.image?\bg{white}p" /> describes how homological features evolve as the filtration progresses. At each stage of the filtration, the differentials <img src="https://latex.codecogs.com/svg.image?\bg{white}d_r" /> may cause a homology class to die, corresponding to the disappearance of a homological feature. The persistence intervals are determined by analyzing when these homology classes are born and when they are annihilated by the differentials of the spectral sequence.
 
-Since the link \( L(p) \) captures the local topology near the singularity, the homology of the link governs the behavior of homological features in the neighborhood of \( p \). The persistence intervals near \( \Sigma \) thus depend on the homology of the link \( L(p) \) and the action of the differentials in the spectral sequence.
+Since the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> captures the local topology near the singularity, the homology of the link governs the behavior of homological features in the neighborhood of <img src="https://latex.codecogs.com/svg.image?\bg{white}p" />. The persistence intervals near <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" /> thus depend on the homology of the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> and the action of the differentials in the spectral sequence.
 
 ##### Corollary 3.1: Stability of Persistence Near Singularities
 
-The persistence intervals near singularities are stable under small perturbations of the underlying space. Small changes in the topology of \( X \) near the singularities result in small changes in the persistence intervals, ensuring that the global topological structure of the space is preserved.
+The persistence intervals near singularities are stable under small perturbations of the underlying space. Small changes in the topology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> near the singularities result in small changes in the persistence intervals, ensuring that the global topological structure of the space is preserved.
 
 ---
 
@@ -199,19 +199,19 @@ The persistence intervals near singularities are stable under small perturbation
 
 In spaces with regions of high curvature, such as those with conical singularities or sharp edges, the persistence of homological features may be influenced by the local curvature. To account for this, we introduce a curvature-weighted filtration, which modifies the standard filtration by incorporating geometric information about the curvature of the space.
 
-Let \( \kappa: X \to \mathbb{R} \) be the curvature function, which assigns a curvature value \( \kappa(x) \) to each point \( x \in X \). Define the curvature-weighted filtration \( \{ X_t^\kappa \}_{t \geq 0} \) as the sublevel sets of \( X \) given by:
-\[
-X_t^\kappa = \{ x \in X \mid \kappa(x) \leq t \}.
-\]
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}\kappa:%20X%20\to%20\mathbb{R}" /> be the curvature function, which assigns a curvature value <img src="https://latex.codecogs.com/svg.image?\bg{white}\kappa(x)" /> to each point <img src="https://latex.codecogs.com/svg.image?\bg{white}x%20\in%20X" />. Define the curvature-weighted filtration <img src="https://latex.codecogs.com/svg.image?\bg{white}\{X_t^\kappa\}_{t%20\geq%200}" /> as the sublevel sets of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> given by:
+
+<img src="https://latex.codecogs.com/svg.image?\bg{white}X_t^\kappa%20=%20\{x%20\in%20X%20\mid%20\kappa(x)%20\leq%20t\}" />.
+
 This filtration ensures that regions of high curvature are incorporated into the filtration earlier, allowing us to track how homological features behave in geometrically complex regions.
 
 ##### Lemma 4.1: Persistence Intervals Bounded by Curvature
 
-Let \( \Sigma \subset X \) be the singular set, and let \( \{ X_t^\kappa \}_{t \geq 0} \) be the curvature-weighted filtration. The persistence intervals for homology classes near \( \Sigma \) are bounded by the curvature of the space near the singularities. Specifically, the death times \( d_i \) of homology classes near \( \Sigma \) satisfy:
-\[
-d_i \leq \inf \left\{ t \mid \alpha \text{ is annihilated in } X_t^\kappa \right\},
-\]
-where \( \alpha \) is a homology class near the singularity, and \( [b_i, d_i) \) is the persistence interval for the corresponding homology feature.
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma%20\subset%20X" /> be the singular set, and let <img src="https://latex.codecogs.com/svg.image?\bg{white}\{X_t^\kappa\}_{t%20\geq%200}" /> be the curvature-weighted filtration. The persistence intervals for homology classes near <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" /> are bounded by the curvature of the space near the singularities. Specifically, the death times <img src="https://latex.codecogs.com/svg.image?\bg{white}d_i" /> of homology classes near <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" /> satisfy:
+
+<img src="https://latex.codecogs.com/svg.image?\bg{white}d_i%20\leq%20\inf%20\left\{%20t%20\mid%20\alpha%20\text{is%20annihilated%20in}%20X_t^\kappa%20\right\}" />,
+
+where <img src="https://latex.codecogs.com/svg.image?\bg{white}\alpha" /> is a homology class near the singularity, and <img src="https://latex.codecogs.com/svg.image?\bg{white}[b_i,%20d_i)" /> is the persistence interval for the corresponding homology feature.
 
 ##### Proof of Lemma 4.1
 
@@ -231,56 +231,56 @@ We now combine the contributions from the smooth, non-smooth, and singular regio
 
 ##### Theorem 5.1: Unified Persistent Homology Equation
 
-Let \( X = X_{\text{smooth}} \cup X_{\text{non-smooth}} \cup \Sigma \) be a stratified topological space, with smooth, non-smooth, and singular regions. The persistent homology of \( X \) in dimension \( k \), denoted \( PH_k(X) \), is given by the following unified equation:
-\[
-PH_k(X) = PH_k(X_{\text{smooth}}) \cup \left( \sum_{\sigma^k \in X_{\text{non-smooth}}} \tau_k(\sigma^k) \right) \cup \left( \bigcup_{p \in \Sigma} PH_k(L(p)) \right),
-\]
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}X%20=%20X_{\text{smooth}}%20\cup%20X_{\text{non-smooth}}%20\cup%20\Sigma" /> be a stratified topological space, with smooth, non-smooth, and singular regions. The persistent homology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> in dimension <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />, denoted <img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X)" />, is given by the following unified equation:
+
+<img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X)%20=%20PH_k(X_{\text{smooth}})%20\cup%20\left(%20\sum_{\sigma^k%20\in%20X_{\text{non-smooth}}}%20\tau_k(\sigma^k)%20\right)%20\cup%20\left(%20\bigcup_{p%20\in%20\Sigma}%20PH_k(L(p))%20\right)" />,
+
 where:
-- \( PH_k(X_{\text{smooth}}) \) is the persistent homology of the smooth region, computed using classical filtration techniques such as the Vietoris-Rips or alpha complex.
-- \( \sum_{\sigma^k \in X_{\text{non-smooth}}} \tau_k(\sigma^k) \) is the persistent homology of the non-smooth regions, computed using discrete Morse theory, where \( \tau_k(\sigma^k) \) represents the persistence of the critical simplices in dimension \( k \).
-- \( \bigcup_{p \in \Sigma} PH_k(L(p)) \) is the persistent homology near singularities, computed using the homology of the links \( L(p) \) and the spectral sequences associated with the filtration of \( X \).
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X_{\text{smooth}})" /> is the persistent homology of the smooth region, computed using classical filtration techniques such as the Vietoris-Rips or alpha complex.
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}\sum_{\sigma^k%20\in%20X_{\text{non-smooth}}}%20\tau_k(\sigma^k)" /> is the persistent homology of the non-smooth regions, computed using discrete Morse theory, where <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau_k(\sigma^k)" /> represents the persistence of the critical simplices in dimension <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />.
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}\bigcup_{p%20\in%20\Sigma}%20PH_k(L(p))" /> is the persistent homology near singularities, computed using the homology of the links <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> and the spectral sequences associated with the filtration of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />.
 
 ##### Proof of Theorem 5.1
 
-The persistent homology of \( X \) is computed by analyzing each region of the space separately and then combining the results. The contribution from the smooth region \( X_{\text{smooth}} \) is given by classical persistent homology techniques, which compute the birth and death times of homology classes as the filtration progresses.
+The persistent homology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> is computed by analyzing each region of the space separately and then combining the results. The contribution from the smooth region <img src="https://latex.codecogs.com/svg.image?\bg{white}X_{\text{smooth}}" /> is given by classical persistent homology techniques, which compute the birth and death times of homology classes as the filtration progresses.
 
-The non-smooth region \( X_{\text{non-smooth}} \) is analyzed using discrete Morse theory, which assigns critical values to simplices in the simplicial complex. The persistence intervals of homology classes in the non-smooth region are determined by the differences in the critical values of the simplices.
+The non-smooth region <img src="https://latex.codecogs.com/svg.image?\bg{white}X_{\text{non-smooth}}" /> is analyzed using discrete Morse theory, which assigns critical values to simplices in the simplicial complex. The persistence intervals of homology classes in the non-smooth region are determined by the differences in the critical values of the simplices.
 
-Finally, the singular region \( \Sigma \) is analyzed using intersection homology and spectral sequences. The homology of the link \( L(p) \) of each singularity \( p \) governs the behavior of homological features near the singularity. The persistence intervals in the singular region are determined by the differentials in the spectral sequence, which track the evolution of homology classes near \( \Sigma \).
+Finally, the singular region <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" /> is analyzed using intersection homology and spectral sequences. The homology of the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> of each singularity <img src="https://latex.codecogs.com/svg.image?\bg{white}p" /> governs the behavior of homological features near the singularity. The persistence intervals in the singular region are determined by the differentials in the spectral sequence, which track the evolution of homology classes near <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma" />.
 
-By combining the contributions from the smooth, non-smooth, and singular regions, we obtain the unified equation for the persistent homology of \( X \).
+By combining the contributions from the smooth, non-smooth, and singular regions, we obtain the unified equation for the persistent homology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />.
 
 ---
 
 ### 6. Conclusion and Further Refinements (continued)
 
-The unified equation for the persistent homology of stratified spaces \( X \), encompassing smooth, non-smooth, and singular regions, is an essential extension of classical persistent homology. By carefully accounting for the contributions from smooth spaces, polyhedral or piecewise-linear spaces, and spaces with topological singularities, this framework provides a comprehensive and systematic way to analyze the evolution of topological features across a wide variety of geometrically complex spaces.
+The unified equation for the persistent homology of stratified spaces <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, encompassing smooth, non-smooth, and singular regions, is an essential extension of classical persistent homology. By carefully accounting for the contributions from smooth spaces, polyhedral or piecewise-linear spaces, and spaces with topological singularities, this framework provides a comprehensive and systematic way to analyze the evolution of topological features across a wide variety of geometrically complex spaces.
 
 ### Final Unified Equation:
 
-\[
-PH_k(X) = PH_k(X_{\text{smooth}}) \cup \left( \sum_{\sigma^k \in X_{\text{non-smooth}}} \tau_k(\sigma^k) \right) \cup \left( \bigcup_{p \in \Sigma} PH_k(L(p)) \right),
-\]
-where:
-- \( PH_k(X_{\text{smooth}}) \) is the persistent homology derived from classical techniques in smooth regions, governed by standard filtration methods such as the Vietoris-Rips complex or alpha complex. The persistence intervals \( [b_i, d_i) \) are determined by analyzing the topology of the smooth part of the space.
-  
-- \( \sum_{\sigma^k \in X_{\text{non-smooth}}} \tau_k(\sigma^k) \) is the contribution from non-smooth regions (e.g., polyhedral complexes or piecewise-linear structures) analyzed using discrete Morse theory. The persistence intervals \( \tau_k(\sigma^k) \) reflect the combinatorial structure of the space and are governed by the critical simplices of the discrete Morse function.
+<img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X)%20=%20PH_k(X_{\text{smooth}})%20\cup%20\left(%20\sum_{\sigma^k%20\in%20X_{\text{non-smooth}}}%20\tau_k(\sigma^k)%20\right)%20\cup%20\left(%20\bigcup_{p%20\in%20\Sigma}%20PH_k(L(p))%20\right)" />,
 
-- \( \bigcup_{p \in \Sigma} PH_k(L(p)) \) represents the persistent homology near the singularities of \( X \), where \( L(p) \) is the link of the singularity at point \( p \in \Sigma \). The evolution of homology classes is computed using spectral sequences and intersection homology, and the persistence intervals are controlled by the differentials in the spectral sequence that govern the homological features in singular neighborhoods.
+where:
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X_{\text{smooth}})" /> is the persistent homology derived from classical techniques in smooth regions, governed by standard filtration methods such as the Vietoris-Rips complex or alpha complex. The persistence intervals <img src="https://latex.codecogs.com/svg.image?\bg{white}[b_i,%20d_i)" /> are determined by analyzing the topology of the smooth part of the space.
+
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}\sum_{\sigma^k%20\in%20X_{\text{non-smooth}}}%20\tau_k(\sigma^k)" /> is the contribution from non-smooth regions (e.g., polyhedral complexes or piecewise-linear structures) analyzed using discrete Morse theory. The persistence intervals <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau_k(\sigma^k)" /> reflect the combinatorial structure of the space and are governed by the critical simplices of the discrete Morse function.
+
+- <img src="https://latex.codecogs.com/svg.image?\bg{white}\bigcup_{p%20\in%20\Sigma}%20PH_k(L(p))" /> represents the persistent homology near the singularities of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, where <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> is the link of the singularity at point <img src="https://latex.codecogs.com/svg.image?\bg{white}p%20\in%20\Sigma" />. The evolution of homology classes is computed using spectral sequences and intersection homology, and the persistence intervals are controlled by the differentials in the spectral sequence that govern the homological features in singular neighborhoods.
 
 ---
 
 #### 6.1 Remarks on Theoretical Guarantees and Applications
 
-The unified framework developed above provides several theoretical guarantees for persistent homology computations in stratified spaces. These guarantees rely on the rigorously defined methods employed in each region of \( X \), such as the stability of persistence intervals, the role of spectral sequences in singular spaces, and the use of discrete Morse theory in non-smooth spaces. Below we summarize some key guarantees:
+The unified framework developed above provides several theoretical guarantees for persistent homology computations in stratified spaces. These guarantees rely on the rigorously defined methods employed in each region of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, such as the stability of persistence intervals, the role of spectral sequences in singular spaces, and the use of discrete Morse theory in non-smooth spaces. Below we summarize some key guarantees:
 
-1. Stability of Persistence Intervals: In all regions of \( X \) (smooth, non-smooth, and singular), the persistence intervals are stable under small perturbations in the space or in the underlying filtration process. This stability ensures that the topological features identified by persistent homology are robust to noise or slight variations in data.
+1. Stability of Persistence Intervals: In all regions of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> (smooth, non-smooth, and singular), the persistence intervals are stable under small perturbations in the space or in the underlying filtration process. This stability ensures that the topological features identified by persistent homology are robust to noise or slight variations in data.
 
-2. Control of Persistence Intervals via Curvature: In regions of \( X \) where curvature plays a significant role (e.g., near conical singularities), the persistence intervals are bounded by the curvature-weighted filtration. This ensures that the geometry of the space influences the persistence of topological features in a predictable and quantifiable manner.
+2. Control of Persistence Intervals via Curvature: In regions of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> where curvature plays a significant role (e.g., near conical singularities), the persistence intervals are bounded by the curvature-weighted filtration. This ensures that the geometry of the space influences the persistence of topological features in a predictable and quantifiable manner.
 
 3. Intersection Homology for Singularities: For spaces with singularities, classical homology is often inadequate in capturing the full topological structure. By incorporating intersection homology and analyzing the links of singular points, we provide a comprehensive framework that guarantees the correct computation of persistent homology in singular regions.
 
-4. Spectral Sequence Convergence: The spectral sequence associated with the stratified space \( X \) converges to the correct homology groups, providing an iterative method for computing the evolution of homological features as the filtration progresses. This convergence is critical for ensuring that the persistent homology near singularities is computed accurately.
+4. Spectral Sequence Convergence: The spectral sequence associated with the stratified space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> converges to the correct homology groups, providing an iterative method for computing the evolution of homological features as the filtration progresses. This convergence is critical for ensuring that the persistent homology near singularities is computed accurately.
+
 
 #### 6.2 Applications and Generalizations
 
