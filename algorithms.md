@@ -1,4 +1,4 @@
-##Algorithm 1: Spectral Sequence and Handling Singular Strata
+## Algorithm 1: Spectral Sequence and Handling Singular Strata
 
 Input: X (topological space), Σ (singular points), Filtration { X_t }
 Output: Persistent homology near singularities
@@ -22,7 +22,7 @@ Output: Persistent homology near singularities
 
 5. Output persistence intervals for homology classes near Σ.
 
-##Algorithm 2: Hybrid Filtration Scheme for Smooth, Non-Smooth, and Singular Transitions
+## Algorithm 2: Hybrid Filtration Scheme for Smooth, Non-Smooth, and Singular Transitions
 
 Input: X (stratified space with smooth, non-smooth, and singular regions)
 Output: Hybrid filtration { X_t } that transitions between regions
@@ -49,7 +49,7 @@ Output: Hybrid filtration { X_t } that transitions between regions
 
 6. Compute persistent homology using the hybrid filtration.
 
-##Algorithm 3: Weighted Bottleneck Distance under Non-Uniform Perturbations
+## Algorithm 3: Weighted Bottleneck Distance under Non-Uniform Perturbations
 
 Input: Persistence diagrams D1, D2, Weight function w(x)
 Output: Weighted bottleneck distance d_B^w(D1, D2)
