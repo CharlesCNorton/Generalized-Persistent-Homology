@@ -25,14 +25,14 @@ This filtration can represent increasing scales or radii, where smaller scales c
 
 #### 0.2 Homology and Persistent Homology
 
-The homology groups \( H_k(X) \) of a topological space \( X \) in dimension \( k \) measure \( k \)-dimensional holes in the space. For example:
-- \( H_0(X) \) measures connected components.
-- \( H_1(X) \) measures loops or 1-dimensional holes.
-- \( H_2(X) \) measures voids or 2-dimensional holes.
+The homology groups ![H_k(X)](https://latex.codecogs.com/svg.image?H_k(X)) of a topological space ![X](https://latex.codecogs.com/svg.image?X) in dimension ![k](https://latex.codecogs.com/svg.image?k) measure ![k](https://latex.codecogs.com/svg.image?k)-dimensional holes in the space. For example:
+- ![H_0(X)](https://latex.codecogs.com/svg.image?H_0(X)) measures connected components.
+- ![H_1(X)](https://latex.codecogs.com/svg.image?H_1(X)) measures loops or 1-dimensional holes.
+- ![H_2(X)](https://latex.codecogs.com/svg.image?H_2(X)) measures voids or 2-dimensional holes.
 
-The persistent homology groups \( PH_k(X) \) track how these \( k \)-dimensional holes evolve as the filtration parameter \( t \) increases. A \( k \)-dimensional feature born at scale \( b_i \) and dying at scale \( d_i \) is represented by a persistence interval \( [b_i, d_i) \).
+The persistent homology groups ![PH_k(X)](https://latex.codecogs.com/svg.image?PH_k(X)) track how these ![k](https://latex.codecogs.com/svg.image?k)-dimensional holes evolve as the filtration parameter ![t](https://latex.codecogs.com/svg.image?t) increases. A ![k](https://latex.codecogs.com/svg.image?k)-dimensional feature born at scale ![b_i](https://latex.codecogs.com/svg.image?b_i) and dying at scale ![d_i](https://latex.codecogs.com/svg.image?d_i) is represented by a persistence interval ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)).
 
-We will now proceed to develop the formal theory for computing \( PH_k(X) \) when \( X \) contains smooth, non-smooth, and singular regions. Each region contributes to the overall persistent homology in a distinct way, and the unified equation will combine these contributions.
+We will now proceed to develop the formal theory for computing ![PH_k(X)](https://latex.codecogs.com/svg.image?PH_k(X)) when ![X](https://latex.codecogs.com/svg.image?X) contains smooth, non-smooth, and singular regions. Each region contributes to the overall persistent homology in a distinct way, and the unified equation will combine these contributions.
 
 ---
 
