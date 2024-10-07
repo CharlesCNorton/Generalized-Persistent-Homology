@@ -1,8 +1,21 @@
-### Formal Problem Statement: Characterization of Persistent Homology for Complex Spaces
+
+# Characterizing Persistent Homology in Complex Spaces: Fractals, Non-Smooth Structures, and Singular Varieties
 
 **By:** Charles Norton & GPT-4 
 
 **Last Updated:** October 6th, 2024
+
+Introduction
+
+In modern topological data analysis (TDA), persistent homology has emerged as a powerful tool for extracting and understanding the underlying topological features of complex spaces. By studying how homological features such as connected components, cycles, and voids appear and disappear across different scales, persistent homology allows us to capture the essence of spaces that exhibit intricate and high-dimensional structures.
+
+The problem of characterizing persistent homology becomes particularly challenging when the topological spaces in question are not simple manifolds but instead fractal-like, non-smooth, or singular in nature. These spaces—ranging from self-similar fractals such as the Sierpiński gasket, to non-smooth polyhedral complexes, and singular varieties like the Whitney umbrella—are characterized by recursive structures, sharp edges, or even topological singularities, making classical homology insufficient for capturing their complexity. In these cases, a more rigorous and nuanced approach is needed to compute and interpret persistent homology.
+
+This work presents a unified framework for analyzing the persistent homology of such complex spaces. We seek to address fundamental questions about the behavior of homological features across various types of spaces, providing theoretical guarantees, closed-form expressions for persistence intervals, and a practical approach for applying these concepts in real-world scenarios. Our approach integrates advanced techniques from discrete Morse theory, intersection homology, and spectral sequences to handle the unique challenges posed by fractals, non-smooth spaces, and singular varieties.
+
+In the following sections, we formalize the problem of characterizing persistent homology for these complex spaces, outlining the mathematical tools and theoretical constructs needed to understand their topological behavior. Through computational experimentation, we validate these theoretical predictions by applying persistent homology to specific examples of fractals, polyhedral complexes, and singular varieties, providing insight into how topological features evolve across filtrations.
+
+### Formal Problem Statement: Characterization of Persistent Homology for Complex Spaces
 
 Let ![X](https://latex.codecogs.com/svg.image?X) be a topological space that belongs to one or more of the following categories:
 1. High-dimensional structure: ![X](https://latex.codecogs.com/svg.image?X) is a manifold embedded in ![\mathbb{R}^n](https://latex.codecogs.com/svg.image?\mathbb{R}^n) where the complexity increases with the dimensionality of the ambient space.
