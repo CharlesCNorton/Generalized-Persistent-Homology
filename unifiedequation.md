@@ -1,5 +1,9 @@
 # A Exploration of the Unified Equation for Persistent Homology in Stratified Spaces
 
+**By:** Charles Norton & GPT-4 
+
+**Last Updated:** October 7th, 2024
+
 ### Formalization of the Unified Equation for Persistent Homology
 
 #### 0. Preliminaries and Notation
