@@ -121,13 +121,13 @@ Consider a 2-dimensional polyhedral complex <img src="https://latex.codecogs.com
 
 ##### Lemma 2.2: Persistent Homology for Non-Smooth Spaces
 
-Let \( X_{\text{non-smooth}} \) be a non-smooth region of the space \( X \), represented by a simplicial complex \( K \) with a discrete Morse function \( f: K \to \mathbb{R} \). The persistent homology in dimension \( k \) for the non-smooth regions is given by the sum of the persistence intervals of the critical simplices. Formally:
-\[
-PH_k(X_{\text{non-smooth}}) = \sum_{\sigma^k \in K} \tau_k(\sigma^k),
-\]
-where \( \tau_k(\sigma^k) \) is the persistence of the critical \( k \)-simplex \( \sigma^k \).
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}X_{\text{non-smooth}}" /> be a non-smooth region of the space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, represented by a simplicial complex <img src="https://latex.codecogs.com/svg.image?\bg{white}K" /> with a discrete Morse function <img src="https://latex.codecogs.com/svg.image?\bg{white}f:%20K%20\to%20\mathbb{R}" />. The persistent homology in dimension <img src="https://latex.codecogs.com/svg.image?\bg{white}k" /> for the non-smooth regions is given by the sum of the persistence intervals of the critical simplices. Formally:
 
-Proof: The critical simplices of the discrete Morse function correspond to the birth and death of homology classes in dimension \( k \). The persistence of each class is determined by the difference between the values of \( f \) on the critical simplices that give rise to and annihilate the class. The total persistent homology is the sum of the persistence intervals of all critical simplices in dimension \( k \).
+<img src="https://latex.codecogs.com/svg.image?\bg{white}PH_k(X_{\text{non-smooth}})%20=%20\sum_{\sigma^k%20\in%20K}%20\tau_k(\sigma^k)" />,
+
+where <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau_k(\sigma^k)" /> is the persistence of the critical <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />-simplex <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^k" />.
+
+**Proof**: The critical simplices of the discrete Morse function correspond to the birth and death of homology classes in dimension <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />. The persistence of each class is determined by the difference between the values of <img src="https://latex.codecogs.com/svg.image?\bg{white}f" /> on the critical simplices that give rise to and annihilate the class. The total persistent homology is the sum of the persistence intervals of all critical simplices in dimension <img src="https://latex.codecogs.com/svg.image?\bg{white}k" />.
 
 ##### Corollary 2.1: Stability of Persistence in Non-Smooth Spaces
 
@@ -135,13 +135,13 @@ The persistence intervals computed using discrete Morse theory are stable under 
 
 ---
 
-#### 3. Singular Regions of \( X \) and Intersection Homology
+#### 3. Singular Regions of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> and Intersection Homology
 
 ##### Definition 3.1: Stratified Spaces and Singular Varieties
 
-Let \( \Sigma \subset X \) be the singular set of the space \( X \), consisting of points where the space is not locally Euclidean. Singularities arise in many contexts, such as algebraic varieties with nodes, cusps, or other types of topological irregularities. The singular set can consist of isolated points, curves, or higher-dimensional strata, depending on the complexity of the space.
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}\Sigma%20\subset%20X" /> be the singular set of the space <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />, consisting of points where the space is not locally Euclidean. Singularities arise in many contexts, such as algebraic varieties with nodes, cusps, or other types of topological irregularities. The singular set can consist of isolated points, curves, or higher-dimensional strata, depending on the complexity of the space.
 
-For each singular point \( p \in \Sigma \), we define the link \( L(p) \), which encodes the local topology near the singularity. The link \( L(p) \) is a lower-dimensional space that captures the structure of \( X \) in a neighborhood of \( p \), and plays a crucial role in understanding the homology of \( X \) near the singularity.
+For each singular point <img src="https://latex.codecogs.com/svg.image?\bg{white}p%20\in%20\Sigma" />, we define the link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" />, which encodes the local topology near the singularity. The link <img src="https://latex.codecogs.com/svg.image?\bg{white}L(p)" /> is a lower-dimensional space that captures the structure of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> in a neighborhood of <img src="https://latex.codecogs.com/svg.image?\bg{white}p" />, and plays a crucial role in understanding the homology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> near the singularity.
 
 ##### Definition 3.2: Intersection Homology
 
