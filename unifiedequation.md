@@ -72,7 +72,7 @@ The persistence intervals <img src="https://latex.codecogs.com/svg.image?\bg{whi
 
 ##### Definition 2.1: Non-Smooth Spaces and Polyhedral Complexes
 
-Let \( X_{\text{non-smooth}} \subseteq X \) be the non-smooth part of \( X \). Non-smooth spaces often arise in polyhedral complexes, piecewise-linear structures, or spaces with sharp edges and corners. These regions do not admit a smooth differentiable structure, and their topological features must be analyzed combinatorially.
+Let <img src="https://latex.codecogs.com/svg.image?\bg{white}X_{\text{non-smooth}}" /> ⊆ <img src="https://latex.codecogs.com/svg.image?\bg{white}X" /> be the non-smooth part of <img src="https://latex.codecogs.com/svg.image?\bg{white}X" />. Non-smooth spaces often arise in polyhedral complexes, piecewise-linear structures, or spaces with sharp edges and corners. These regions do not admit a smooth differentiable structure, and their topological features must be analyzed combinatorially.
 
 A common approach for analyzing non-smooth spaces is to decompose them into simplicial complexes or polyhedral complexes, where each simplex represents a combinatorial piece of the space. For instance, a polyhedral complex may consist of vertices, edges, and higher-dimensional simplices glued together along their faces.
 
@@ -82,10 +82,10 @@ Consider the 2-dimensional polyhedral complex consisting of a triangulated surfa
 
 ##### Definition 2.2: Discrete Morse Function
 
-To analyze the persistent homology of \( X_{\text{non-smooth}} \), we use discrete Morse theory, which assigns a real-valued function \( f: K \to \mathbb{R} \) to a simplicial complex \( K \) in a way that respects the combinatorial structure of the complex. A discrete Morse function \( f: K \to \mathbb{R} \) on a simplicial complex \( K \) assigns real values to the simplices of \( K \) in a way that respects the combinatorial structure of the complex, with the following conditions:
+To analyze the persistent homology of <img src="https://latex.codecogs.com/svg.image?\bg{white}X_{\text{non-smooth}}" />, we use discrete Morse theory, which assigns a real-valued function <img src="https://latex.codecogs.com/svg.image?\bg{white}f:%20K%20\to%20\mathbb{R}" /> to a simplicial complex <img src="https://latex.codecogs.com/svg.image?\bg{white}K" /> in a way that respects the combinatorial structure of the complex. A discrete Morse function <img src="https://latex.codecogs.com/svg.image?\bg{white}f:%20K%20\to%20\mathbb{R}" /> on a simplicial complex <img src="https://latex.codecogs.com/svg.image?\bg{white}K" /> assigns real values to the simplices of <img src="https://latex.codecogs.com/svg.image?\bg{white}K" /> in a way that respects the combinatorial structure of the complex, with the following conditions:
 
-- For each \( p \)-dimensional simplex \( \sigma^p \in K \), there is at most one \( (p-1) \)-dimensional face \( \tau^{p-1} \subset \sigma^p \) such that \( f(\tau^{p-1}) \geq f(\sigma^p) \).
-- For each \( p \)-dimensional simplex \( \sigma^p \in K \), there is at most one \( (p+1) \)-dimensional coface \( \eta^{p+1} \superset \sigma^p \) such that \( f(\eta^{p+1}) \leq f(\sigma^p) \).
+- For each <img src="https://latex.codecogs.com/svg.image?\bg{white}p" />-dimensional simplex <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^p%20\in%20K" />, there is at most one <img src="https://latex.codecogs.com/svg.image?\bg{white}(p-1)" />-dimensional face <img src="https://latex.codecogs.com/svg.image?\bg{white}\tau^{p-1}%20\subset%20\sigma^p" /> such that <img src="https://latex.codecogs.com/svg.image?\bg{white}f(\tau^{p-1})%20\geq%20f(\sigma^p)" />.
+- For each <img src="https://latex.codecogs.com/svg.image?\bg{white}p" />-dimensional simplex <img src="https://latex.codecogs.com/svg.image?\bg{white}\sigma^p%20\in%20K" />, there is at most one <img src="https://latex.codecogs.com/svg.image?\bg{white}(p+1)" />-dimensional coface <img src="https://latex.codecogs.com/svg.image?\bg{white}\eta^{p+1}%20\supset%20\sigma^p" /> such that <img src="https://latex.codecogs.com/svg.image?\bg{white}f(\eta^{p+1})%20\leq%20f(\sigma^p)" />.
 
 These conditions ensure that the discrete Morse function encodes the topological structure of the space in a way that captures critical simplices, which are essential for determining the homology classes of the space.
 
