@@ -56,7 +56,7 @@ The filtration ![\{ VR(X_{\text{smooth}}, t) \}_{t \geq 0}](https://latex.codeco
 
 Let ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) be a smooth region of ![X](https://latex.codecogs.com/svg.image?X), equipped with a filtration ![\{ X_t \}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{X_t\}_{t%20\geq%200}) induced by a Vietoris-Rips complex or a related construction. The persistent homology in dimension ![k](https://latex.codecogs.com/svg.image?k), denoted ![PH_k(X_{\text{smooth}})](https://latex.codecogs.com/svg.image?PH_k(X_{\text{smooth}})), consists of a collection of persistence intervals of the form:
 
-![PH_k(X_{\text{smooth}}) = \bigcup \left\{ [b_i, d_i) \mid H_k](https://latex.codecogs.com/svg.image?PH_k(X_{\text{smooth}})%20=%20\bigcup%20\left\{%20[b_i,%20d_i)%20\mid%20H_k) class born at ![b_i](https://latex.codecogs.com/svg.image?b_i) and dies at ![d_i](https://latex.codecogs.com/svg.image?d_i) \}.
+![PH_k(X_{\text{smooth}})](https://latex.codecogs.com/svg.image?PH_k(X_{\text{smooth}})) = ![\bigcup](https://latex.codecogs.com/svg.image?\bigcup) { ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) | ![H_k](https://latex.codecogs.com/svg.image?H_k) class born at ![b_i](https://latex.codecogs.com/svg.image?b_i) and dies at ![d_i](https://latex.codecogs.com/svg.image?d_i) }.
 
 Each interval ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) corresponds to a homology class in dimension ![k](https://latex.codecogs.com/svg.image?k), where ![b_i](https://latex.codecogs.com/svg.image?b_i) is the birth time and ![d_i](https://latex.codecogs.com/svg.image?d_i) is the death time of the feature.
 
