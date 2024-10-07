@@ -17,11 +17,11 @@ We aim to compute the persistent homology ![PH_k(X)](https://latex.codecogs.com/
 
 #### 0.1 Filtrations
 
-A filtration on a space \( X \) is a sequence of nested subspaces \( \{ X_t \}_{t \geq 0} \), indexed by a real-valued parameter \( t \geq 0 \), such that:
-\[
-X_{t_1} \subseteq X_{t_2} \quad \text{whenever} \quad t_1 \leq t_2.
-\]
-This filtration can represent increasing scales or radii, where smaller scales capture local features and larger scales capture global ones. Persistent homology analyzes the evolution of topological features as \( t \) varies, providing intervals \( [b_i, d_i) \) for the birth and death of each feature.
+A filtration on a space ![X](https://latex.codecogs.com/svg.image?X) is a sequence of nested subspaces ![\{ X_t \}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{X_t\}_{t%20\geq%200}), indexed by a real-valued parameter ![t \geq 0](https://latex.codecogs.com/svg.image?t%20\geq%200), such that:
+
+![X_{t_1} \subseteq X_{t_2} \quad \text{whenever} \quad t_1 \leq t_2](https://latex.codecogs.com/svg.image?X_{t_1}%20\subseteq%20X_{t_2}%20\quad%20\text{whenever}%20\quad%20t_1%20\leq%20t_2)
+
+This filtration can represent increasing scales or radii, where smaller scales capture local features and larger scales capture global ones. Persistent homology analyzes the evolution of topological features as ![t](https://latex.codecogs.com/svg.image?t) varies, providing intervals ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) for the birth and death of each feature.
 
 #### 0.2 Homology and Persistent Homology
 
