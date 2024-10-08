@@ -15,11 +15,11 @@ In the following sections, we formalize the problem of characterizing persistent
 
 ### Formal Problem Statement: Characterization of Persistent Homology for Complex Spaces
 
-Let ![X](https://latex.codecogs.com/svg.image?X) be a topological space that belongs to one or more of the following categories:
-1. High-dimensional structure: ![X](https://latex.codecogs.com/svg.image?X) is a manifold embedded in ![\mathbb{R}^n](https://latex.codecogs.com/svg.image?\mathbb{R}^n) where the complexity increases with the dimensionality of the ambient space.
-2. Fractal-like structure: ![X](https://latex.codecogs.com/svg.image?X) is a fractal or exhibits self-similarity across multiple scales, with a non-integer Hausdorff dimension.
-3. Non-smooth space: ![X](https://latex.codecogs.com/svg.image?X) lacks smoothness, such as a polyhedral complex or a piecewise-linear space, where classical smooth topological tools fail.
-4. Singular varieties: ![X](https://latex.codecogs.com/svg.image?X) has singularities, e.g., nodal singularities, cusps, or more complex algebraic singularities, which introduce local topological complications.
+Let X be a topological space that belongs to one or more of the following categories:
+1. High-dimensional structure: X is a manifold embedded in R^n where the complexity increases with the dimensionality of the ambient space.
+2. Fractal-like structure: X is a fractal or exhibits self-similarity across multiple scales, with a non-integer Hausdorff dimension.
+3. Non-smooth space: X lacks smoothness, such as a polyhedral complex or a piecewise-linear space, where classical smooth topological tools fail.
+4. Singular varieties: X has singularities, e.g., nodal singularities, cusps, or more complex algebraic singularities, which introduce local topological complications.
 
 The objective is to characterize the persistent homology of such a space ![X](https://latex.codecogs.com/svg.image?X). Specifically, the problem can be broken down into several key questions:
 
