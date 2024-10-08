@@ -15,16 +15,16 @@ In the following sections, we formalize the problem of characterizing persistent
 
 ### Formal Problem Statement: Characterization of Persistent Homology for Complex Spaces
 
-Let X be a topological space that belongs to one or more of the following categories:
-1. High-dimensional structure: X is a manifold embedded in R^n where the complexity increases with the dimensionality of the ambient space.
-2. Fractal-like structure: X is a fractal or exhibits self-similarity across multiple scales, with a non-integer Hausdorff dimension.
-3. Non-smooth space: X lacks smoothness, such as a polyhedral complex or a piecewise-linear space, where classical smooth topological tools fail.
-4. Singular varieties: X has singularities, e.g., nodal singularities, cusps, or more complex algebraic singularities, which introduce local topological complications.
+Let 𝑿 be a topological space that belongs to one or more of the following categories:
+1. High-dimensional structure: 𝑿 is a manifold embedded in ℝⁿ where the complexity increases with the dimensionality of the ambient space.
+2. Fractal-like structure: 𝑿 is a fractal or exhibits self-similarity across multiple scales, with a non-integer Hausdorff dimension.
+3. Non-smooth space: 𝑿 lacks smoothness, such as a polyhedral complex or a piecewise-linear space, where classical smooth topological tools fail.
+4. Singular varieties: 𝑿 has singularities, e.g., nodal singularities, cusps, or more complex algebraic singularities, which introduce local topological complications.
 
-The objective is to characterize the persistent homology of such a space ![X](https://latex.codecogs.com/svg.image?X). Specifically, the problem can be broken down into several key questions:
+The objective is to characterize the persistent homology of such a space 𝑿. Specifically, the problem can be broken down into several key questions:
 
 #### 1. Behavior of Homological Features Under Persistent Homology:
-How do the homological features of a space ![X](https://latex.codecogs.com/svg.image?X) evolve under persistent homology as a function of a filtration parameter? We are interested in analyzing the birth, persistence, and death of topological features, including:
+How do the homological features of a space 𝑿 evolve under persistent homology as a function of a filtration parameter? We are interested in analyzing the birth, persistence, and death of topological features, including:
 - ![H_0](https://latex.codecogs.com/svg.image?H_0) (connected components),
 - ![H_1](https://latex.codecogs.com/svg.image?H_1) (loops),
 - ![H_2](https://latex.codecogs.com/svg.image?H_2) (voids),
