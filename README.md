@@ -234,7 +234,7 @@ Consider the Sierpiński Gasket, a classic fractal with a Hausdorff dimension d�
 
 The closed-form expression for the persistence intervals of H₁ is periodic, reflecting the scaling factor s = 1/2 of the fractal. The persistence intervals are given by:
 
-P₁(F) = { C₁ ⋅ 2^{-n} ∣ n ∈ ℤ }
+P₁(F) = { C₁ * 2⁻ⁿ ∣ n ∈ ℤ }
 
 where C₁ represents the initial scale of the filtration.
 
