@@ -1,9 +1,9 @@
 
 # Characterizing Persistent Homology in Complex Spaces: Fractals, Non-Smooth Structures, and Singular Varieties
 
-**By:** Charles Norton & GPT-4 
+By: Charles Norton & GPT-4 
 
-**Last Updated:** October 6th, 2024
+Last Updated: October 6th, 2024
 
 In modern topological data analysis (TDA), persistent homology has emerged as a powerful tool for extracting and understanding the underlying topological features of complex spaces. By studying how homological features such as connected components, cycles, and voids appear and disappear across different scales, persistent homology allows us to capture the essence of spaces that exhibit intricate and high-dimensional structures.
 
@@ -58,62 +58,83 @@ We construct a filtration {Ft​}ₜ≥0​ of the fractal set F, where each F�
 For a fractal with self-similar scaling factor s the persistent homology for each dimension k can be described by periodic sequences of persistence intervals. The persistence intervals for the homology groups Hₖ(Fₜ) evolve with the filtration parameter ₜ, reflecting the recursive nature of the fractal.
 
 ##### 1.2 Theoretical Guarantees: Hausdorff Dimension Bounds
-The Hausdorff dimension ![d_H](https://latex.codecogs.com/svg.image?d_H) of the fractal provides an upper bound on the dimensions in which non-trivial homology groups can exist. Formally, if ![F](https://latex.codecogs.com/svg.image?F) has Hausdorff dimension ![d_H](https://latex.codecogs.com/svg.image?d_H), then:
-![H_k(F) \neq 0 \quad \text{for} \quad k \leq d_H](https://latex.codecogs.com/svg.image?H_k(F)\neq%200\quad\text{for}\quad%20k\leq%20d_H).
-For example, for a fractal with ![d_H = 1.58](https://latex.codecogs.com/svg.image?d_H=1.58), we expect non-trivial homology in dimensions ![H_0](https://latex.codecogs.com/svg.image?H_0) (connected components) and ![H_1](https://latex.codecogs.com/svg.image?H_1) (loops), but no non-trivial homology in ![H_2](https://latex.codecogs.com/svg.image?H_2) and higher dimensions.
+
+The Hausdorff dimension dₕ of the fractal provides an upper bound on the dimensions in which non-trivial homology groups can exist. Formally, if F has Hausdorff dimension dₕ, then:
+
+Hₖ(F) ≠ 0 for k ≤ dₕ.
+
+For example, for a fractal with dₕ = 1.58, we expect non-trivial homology in dimensions H₀ (connected components) and H₁ (loops), but no non-trivial homology in H₂ and higher dimensions.
 
 ##### 1.3 Closed-Form Expression for Persistence Intervals
-Given the periodicity inherent in fractal structures, we derive the following closed-form expression for the persistence intervals in dimension ![k](https://latex.codecogs.com/svg.image?k):
-![P_k(F) = \left\{ C_k s^n \mid n \in \mathbb{Z} \right\}](https://latex.codecogs.com/svg.image?P_k(F)%20=%20\left\{C_k%20s^n%20\mid%20n\in\mathbb{Z}%20\right\}),
-where ![C_k](https://latex.codecogs.com/svg.image?C_k) is a constant representing the initial filtration scale, and ![s](https://latex.codecogs.com/svg.image?s) is the self-similarity factor of the fractal. This expression captures the quasi-periodic emergence and disappearance of homological features across scales, reflecting the recursive geometry of fractals.
+
+Given the periodicity inherent in fractal structures, we derive the following closed-form expression for the persistence intervals in dimension k:
+
+Pₖ(F) = { Cₖ sⁿ ∣ n ∈ ℤ }
+
+where Cₖ is a constant representing the initial filtration scale, and s is the self-similarity factor of the fractal. This expression captures the quasi-periodic emergence and disappearance of homological features across scales, reflecting the recursive geometry of fractals.
+
 
 #### I.4 Example: Sierpiński Gasket
-The Sierpiński Gasket is a classic example of a fractal, with a Hausdorff dimension ![d_H = \log(3)/\log(2) \approx 1.585](https://latex.codecogs.com/svg.image?d_H=\log(3)/\log(2)\approx1.585). Its self-similar structure allows for non-trivial homology in dimensions ![H_0](https://latex.codecogs.com/svg.image?H_0) and ![H_1](https://latex.codecogs.com/svg.image?H_1).
 
-- Connected Components (![H_0](https://latex.codecogs.com/svg.image?H_0)): At small scales, each triangle is disconnected from the others, so multiple connected components persist.
-- Loops (![H_1](https://latex.codecogs.com/svg.image?H_1)): As the filtration proceeds, loops corresponding to the holes in the structure appear and eventually fill in as the resolution increases.
+The Sierpiński Gasket is a classic example of a fractal, with a Hausdorff dimension dₕ = log(3)/log(2) ≈ 1.585. Its self-similar structure allows for non-trivial homology in dimensions H₀ and H₁.
 
-Given the recursive nature of the Sierpiński Gasket, the persistence intervals for ![H_1](https://latex.codecogs.com/svg.image?H_1) are periodic, governed by the scaling factor ![s = 1/2](https://latex.codecogs.com/svg.image?s=1/2).
+- Connected Components (H₀): At small scales, each triangle is disconnected from the others, so multiple connected components persist.
+- Loops (H₁): As the filtration proceeds, loops corresponding to the holes in the structure appear and eventually fill in as the resolution increases.
+
+Given the recursive nature of the Sierpiński Gasket, the persistence intervals for H₁ are periodic, governed by the scaling factor s = 1/2.
 
 ---
 
 #### II. Persistent Homology for Non-Smooth Spaces
 
-Let ![X](https://latex.codecogs.com/svg.image?X) be a non-smooth space, such as a polyhedral complex, a piecewise-linear space, or a space with sharp edges and vertices. In these spaces, classical homology theories relying on smooth structures break down. To compute persistent homology in non-smooth spaces, we apply discrete Morse theory, which provides a combinatorial framework for analyzing the topology of such spaces.
+Let X be a non-smooth space, such as a polyhedral complex, a piecewise-linear space, or a space with sharp edges and vertices. In these spaces, classical homology theories relying on smooth structures break down. To compute persistent homology in non-smooth spaces, we apply discrete Morse theory, which provides a combinatorial framework for analyzing the topology of such spaces.
 
 ##### 2.1 Discrete Morse Theory and Critical Simplices
-A discrete Morse function ![f](https://latex.codecogs.com/svg.image?f) on a simplicial complex ![X](https://latex.codecogs.com/svg.image?X) assigns values to simplices in such a way that each simplex is either paired with an adjacent simplex of a higher dimension or is critical. The critical simplices represent topological features such as connected components, loops, and voids.
 
-- Critical 0-cells correspond to connected components (![H_0](https://latex.codecogs.com/svg.image?H_0)).
-- Critical 1-cells correspond to loops (![H_1](https://latex.codecogs.com/svg.image?H_1)).
-- Critical 2-cells correspond to voids (![H_2](https://latex.codecogs.com/svg.image?H_2)), and so on.
+A discrete Morse function f on a simplicial complex X assigns values to simplices in such a way that each simplex is either paired with an adjacent simplex of a higher dimension or is critical. The critical simplices represent topological features such as connected components, loops, and voids.
+
+- Critical 0-cells correspond to connected components (H₀).
+- Critical 1-cells correspond to loops (H₁).
+- Critical 2-cells correspond to voids (H₂), and so on.
 
 The birth and death of homology classes during the filtration process are determined by the appearance and disappearance of critical simplices.
 
 ##### 2.2 Persistence Intervals from Discrete Morse Theory
-In discrete Morse theory, the persistence interval for a homology class in dimension ![k](https://latex.codecogs.com/svg.image?k) is given by the lifetime of the corresponding critical simplices. For a critical ![k](https://latex.codecogs.com/svg.image?k)-simplex ![\sigma^k](https://latex.codecogs.com/svg.image?\sigma^k) and a critical ![(k+1)](https://latex.codecogs.com/svg.image?(k+1))-simplex ![\tau^{k+1}](https://latex.codecogs.com/svg.image?\tau^{k+1}), the persistence interval is:
-![\text{Persistence Interval} = [f(\sigma^k), f(\tau^{k+1})]](https://latex.codecogs.com/svg.image?\text{Persistence%20Interval}=%20[f(\sigma^k),f(\tau^{k+1})]),
-where ![f(\sigma^k)](https://latex.codecogs.com/svg.image?f(\sigma^k)) is the birth time and ![f(\tau^{k+1})](https://latex.codecogs.com/svg.image?f(\tau^{k+1})) is the death time of the homology class.
+
+In discrete Morse theory, the persistence interval for a homology class in dimension k is given by the lifetime of the corresponding critical simplices. For a critical k-simplex σᵏ and a critical (k+1)-simplex τᵏ⁺¹, the persistence interval is:
+
+Persistence Interval = [f(σᵏ), f(τᵏ⁺¹)],
+
+where f(σᵏ) is the birth time and f(τᵏ⁺¹) is the death time of the homology class.
 
 ##### 2.3 Closed-Form Expression for Persistence Intervals
-The persistence intervals in a non-smooth space ![X](https://latex.codecogs.com/svg.image?X) can be expressed combinatorially. Let ![\mu_k](https://latex.codecogs.com/svg.image?\mu_k) denote the number of critical simplices in dimension ![k](https://latex.codecogs.com/svg.image?k), and let ![\tau_k](https://latex.codecogs.com/svg.image?\tau_k) represent the lifetime of each critical simplex in dimension ![k](https://latex.codecogs.com/svg.image?k). The persistence intervals for homology classes in dimension ![k](https://latex.codecogs.com/svg.image?k) are given by:
-![P_k(X) = \sum_{\sigma^k \in X} \tau_k(\sigma^k)](https://latex.codecogs.com/svg.image?P_k(X)=%20\sum_{\sigma^k\in%20X}%20\tau_k(\sigma^k)),
-where ![\tau_k(\sigma^k) = f(\tau^{k+1}) - f(\sigma^k)](https://latex.codecogs.com/svg.image?\tau_k(\sigma^k)%20=%20f(\tau^{k+1})%20-%20f(\sigma^k)) represents the lifetime of the homology class associated with the critical simplex ![\sigma^k](https://latex.codecogs.com/svg.image?\sigma^k).
+
+The persistence intervals in a non-smooth space X can be expressed combinatorially. Let μₖ denote the number of critical simplices in dimension k, and let τₖ represent the lifetime of each critical simplex in dimension k. The persistence intervals for homology classes in dimension k are given by:
+
+Pₖ(X) = ∑_{σᵏ ∈ X} τₖ(σᵏ),
+
+where τₖ(σᵏ) = f(τᵏ⁺¹) - f(σᵏ) represents the lifetime of the homology class associated with the critical simplex σᵏ.
 
 ##### 2.4 Example: Polyhedral Complex
+
 Consider a polyhedral complex composed of triangular faces. The critical simplices correspond to the vertices, edges, and faces of the polyhedron, and the persistence intervals reflect how these simplices interact as the filtration progresses. For example:
-- Connected components (![H_0](https://latex.codecogs.com/svg.image?H_0)) arise from the vertices and disappear when they merge into larger components.
-- Loops (![H_1](https://latex.codecogs.com/svg.image?H_1)) form when edges in the polyhedral complex enclose a region, creating a loop in the homology. These loops persist until higher-dimensional simplices, such as triangular faces, fill the enclosed region, causing the loops to "die."
+
+- Connected components (H₀) arise from the vertices and disappear when they merge into larger components.
+- Loops (H₁) form when edges in the polyhedral complex enclose a region, creating a loop in the homology. These loops persist until higher-dimensional simplices, such as triangular faces, fill the enclosed region, causing the loops to "die."
 
 For instance, in a simplicial complex representing a tetrahedron, the connected components (critical 0-cells) merge as edges are added, while loops (critical 1-cells) appear when a collection of edges forms the boundary of a triangle. These loops persist until the triangle fills in as part of the filtration process, eliminating the loop and contributing to the birth of a higher-dimensional void.
 
 ##### 2.5 Theoretical Guarantees for Non-Smooth Spaces
+
 Discrete Morse theory guarantees that:
+
 - Existence of persistence intervals: Every homology class corresponds to a critical simplex, ensuring that persistence intervals can always be computed combinatorially.
-- Uniqueness: The persistence intervals are uniquely determined by the discrete Morse function on the simplicial complex, where each critical ![k](https://latex.codecogs.com/svg.image?k)-cell is paired with a critical ![(k+1)](https://latex.codecogs.com/svg.image?(k+1))-cell.
+- Uniqueness: The persistence intervals are uniquely determined by the discrete Morse function on the simplicial complex, where each critical k-cell is paired with a critical (k+1)-cell.
 - Relation to global invariants: The sum of critical simplices respects the Euler characteristic of the space, ensuring consistency with classical topological invariants:
-![\chi(X) = \sum_{k=0}^\infty (-1)^k \mu_k](https://latex.codecogs.com/svg.image?\chi(X)=%20\sum_{k=0}^\infty(-1)^k\mu_k),
-where ![\mu_k](https://latex.codecogs.com/svg.image?\mu_k) represents the number of critical simplices in dimension ![k](https://latex.codecogs.com/svg.image?k).
+
+χ(X) = ∑_{k=0}^∞ (-1)ᵏ μₖ
+
+where μₖ represents the number of critical simplices in dimension k.
 
 Discrete Morse theory provides a combinatorial and computational framework for computing persistent homology in non-smooth spaces, where the topology is inherently piecewise-linear or lacks smooth structures.
 
@@ -121,41 +142,50 @@ Discrete Morse theory provides a combinatorial and computational framework for c
 
 ### III. Persistent Homology for Singular Varieties
 
-Let ![X](https://latex.codecogs.com/svg.image?X) be a singular variety, such as an algebraic variety with singular points (e.g., nodal singularities, cusps, or higher-dimensional singularities). In singular varieties, classical homology theory fails to capture the local topological structure near singular points, necessitating the use of intersection homology. Intersection homology extends classical homology by controlling how chains intersect the singular set, thereby allowing the computation of meaningful homological information in singular spaces.
+Let X be a singular variety, such as an algebraic variety with singular points (e.g., nodal singularities, cusps, or higher-dimensional singularities). In singular varieties, classical homology theory fails to capture the local topological structure near singular points, necessitating the use of intersection homology. Intersection homology extends classical homology by controlling how chains intersect the singular set, thereby allowing the computation of meaningful homological information in singular spaces.
 
 #### 3.1 Stratification and Singularities
-Singular varieties are typically stratified into smooth and singular parts. Let ![\Sigma \subset X](https://latex.codecogs.com/svg.image?\Sigma\subset%20X) represent the singular set of ![X](https://latex.codecogs.com/svg.image?X), which consists of points where ![X](https://latex.codecogs.com/svg.image?X) is not smooth. The variety ![X](https://latex.codecogs.com/svg.image?X) is decomposed as:
-![X = X_{\text{smooth}} \cup X_{\text{singular}}](https://latex.codecogs.com/svg.image?X=%20X_{\text{smooth}}%20\cup%20X_{\text{singular}}),
-where ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) is the smooth part of the space and ![X_{\text{singular}} = \Sigma](https://latex.codecogs.com/svg.image?X_{\text{singular}}=%20\Sigma) denotes the singular set. Each point ![p \in \Sigma](https://latex.codecogs.com/svg.image?p\in\Sigma) is associated with a link ![L(p)](https://latex.codecogs.com/svg.image?L(p)), which is a lower-dimensional topological space capturing the local structure of the singularity.
+Singular varieties are typically stratified into smooth and singular parts. Let Σ ⊂ X represent the singular set of X, which consists of points where X is not smooth. The variety X is decomposed as:
+
+X = X_smooth ∪ X_singular,
+
+where X_smooth is the smooth part of the space and X_singular = Σ denotes the singular set. Each point p ∈ Σ is associated with a link L(p), which is a lower-dimensional topological space capturing the local structure of the singularity.
 
 #### 3.2 Intersection Homology and Singular Varieties
-Intersection homology, denoted ![IH_k(X)](https://latex.codecogs.com/svg.image?IH_k(X)), modifies the classical homology theory by restricting the chains used to compute homology, based on their interactions with the singular set. Chains are allowed to intersect the singular strata only in a controlled way, dictated by certain perversity conditions, which describe the allowable behavior of chains near the singular points.
+Intersection homology, denoted IHₖ(X), modifies the classical homology theory by restricting the chains used to compute homology, based on their interactions with the singular set. Chains are allowed to intersect the singular strata only in a controlled way, dictated by certain perversity conditions, which describe the allowable behavior of chains near the singular points.
 
-Given a singular point ![p \in \Sigma](https://latex.codecogs.com/svg.image?p\in\Sigma), the homology of the link ![L(p)](https://latex.codecogs.com/svg.image?L(p)) provides essential information about how homological features behave near the singularity. The homology groups ![H_k(L(p))](https://latex.codecogs.com/svg.image?H_k(L(p))) describe the local topological features of the singularity, such as loops or voids that surround the singular point.
+Given a singular point p ∈ Σ, the homology of the link L(p) provides essential information about how homological features behave near the singularity. The homology groups Hₖ(L(p)) describe the local topological features of the singularity, such as loops or voids that surround the singular point.
 
 #### 3.3 Spectral Sequences and Persistent Homology for Singular Varieties
-To compute persistent homology for singular varieties, we use spectral sequences associated with the stratification of ![X](https://latex.codecogs.com/svg.image?X). Spectral sequences are algebraic tools that allow us to compute homology in stages, beginning with simpler spaces (such as the smooth part ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) and the links ![L(p)](https://latex.codecogs.com/svg.image?L(p))) and gradually building up to the homology of the entire space.
+To compute persistent homology for singular varieties, we use spectral sequences associated with the stratification of X. Spectral sequences are algebraic tools that allow us to compute homology in stages, beginning with simpler spaces (such as the smooth part X_smooth and the links L(p)) and gradually building up to the homology of the entire space.
 
-Let ![E_r^{p,q}](https://latex.codecogs.com/svg.image?E_r^{p,q}) denote the ![r](https://latex.codecogs.com/svg.image?r)-th page of the spectral sequence. The differentials ![d_r: E_r^{p,q} \to E_r^{p+r, q-r+1}](https://latex.codecogs.com/svg.image?d_r:%20E_r^{p,q}\to%20E_r^{p+r,%20q-r+1}) describe how homology classes evolve as we pass through different layers of the stratified space. These differentials track how homological features from the smooth part ![X_{\text{smooth}}](https://latex.codecogs.com/svg.image?X_{\text{smooth}}) interact with the singular set ![\Sigma](https://latex.codecogs.com/svg.image?\Sigma) and how these interactions affect the birth and death of homological features.
+Let Eᵣ^{p,q} denote the r-th page of the spectral sequence. The differentials dᵣ: Eᵣ^{p,q} → Eᵣ^{p+r, q-r+1} describe how homology classes evolve as we pass through different layers of the stratified space. These differentials track how homological features from the smooth part X_smooth interact with the singular set Σ and how these interactions affect the birth and death of homological features.
 
-The persistence intervals for homology classes near the singular set ![\Sigma](https://latex.codecogs.com/svg.image?\Sigma) are influenced by the homology of the link ![L(\Sigma)](https://latex.codecogs.com/svg.image?L(\Sigma)) and the differentials in the spectral sequence. Formally, the persistence intervals in dimension ![k](https://latex.codecogs.com/svg.image?k) are given by:
+The persistence intervals for homology classes near the singular set Σ are influenced by the homology of the link L(Σ) and the differentials in the spectral sequence. Formally, the persistence intervals in dimension k are given by:
 
-![P_k(\Sigma)](https://latex.codecogs.com/svg.image?P_k(\Sigma)) = { ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) | b<sub>i</sub> and d<sub>i</sub> are determined by ![H_k(L(\Sigma))](https://latex.codecogs.com/svg.image?H_k(L(\Sigma))) and the differentials ![d_r](https://latex.codecogs.com/svg.image?d_r) }.
+Pₖ(Σ) = { [bᵢ, dᵢ) ∣ bᵢ and dᵢ are determined by Hₖ(L(Σ)) and the differentials dᵣ }.
 
 This formulation reflects the fact that the homological features near singularities are governed by the topology of the link and evolve according to the spectral sequence differentials.
 
-
 #### 3.4 Curvature-Weighted Filtrations
-In regions near singular points, the geometry of the space exhibits sharp changes, often leading to high curvature near the singularities. To account for this, we introduce curvature-weighted filtrations, which modify the filtration process by incorporating curvature information into the persistence calculation. Let ![\kappa(x)](https://latex.codecogs.com/svg.image?\kappa(x)) represent the curvature at each point ![x \in X](https://latex.codecogs.com/svg.image?x\in%20X), and define the curvature-weighted filtration ![\{ X_t^\kappa \}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{X_t^\kappa\}_{t\geq0}), where:
-![X_t^\kappa = \{ x \in X \mid \kappa(x) \leq t \}](https://latex.codecogs.com/svg.image?X_t^\kappa=%20\{x\in%20X%20\mid%20\kappa(x)%20\leq%20t\}).
-The persistence intervals for homology classes near the singularities are bounded by the curvature of the space near the singular points. Specifically, if ![\alpha](https://latex.codecogs.com/svg.image?\alpha) is a homology class corresponding to a feature near the singular set ![\Sigma](https://latex.codecogs.com/svg.image?\Sigma), then its death time is bounded by the local curvature:
-![d_i \leq \inf \{ t \mid \alpha \text{ is annihilated in } X_t^\kappa \}](https://latex.codecogs.com/svg.image?d_i%20\leq%20\inf%20\{t\mid\alpha%20\text{is%20annihilated%20in}%20X_t^\kappa\}).
+
+In regions near singular points, the geometry of the space exhibits sharp changes, often leading to high curvature near the singularities. To account for this, we introduce curvature-weighted filtrations, which modify the filtration process by incorporating curvature information into the persistence calculation. Let κ(x) represent the curvature at each point x ∈ X, and define the curvature-weighted filtration { Xₜ^κ }_{ₜ ≥ 0}, where:
+
+Xₜ^κ = { x ∈ X ∣ κ(x) ≤ t }
+
+The persistence intervals for homology classes near the singularities are bounded by the curvature of the space near the singular points. Specifically, if α is a homology class corresponding to a feature near the singular set Σ, then its death time is bounded by the local curvature:
+
+dᵢ ≤ inf { t ∣ α is annihilated in Xₜ^κ }
+
 This ensures that features near singularities do not persist beyond the scales influenced by the curvature of the space.
 
 #### 3.5 Closed-Form Expression for Persistent Homology in Singular Varieties
-For a singular variety ![X](https://latex.codecogs.com/svg.image?X) with singular set ![\Sigma](https://latex.codecogs.com/svg.image?\Sigma), the total persistent homology can be expressed as a union of persistence intervals from the smooth part and the singular part. Formally, the persistence intervals in dimension ![k](https://latex.codecogs.com/svg.image?k) are given by:
-![P_k(X) = P_k(X \setminus \Sigma) \cup \bigcup_{p \in \Sigma} P_k(\Sigma_p)](https://latex.codecogs.com/svg.image?P_k(X)%20=%20P_k(X\setminus\Sigma)\cup\bigcup_{p\in%20\Sigma}%20P_k(\Sigma_p)),
-where ![P_k(X \setminus \Sigma)](https://latex.codecogs.com/svg.image?P_k(X\setminus\Sigma)) represents the persistence intervals associated with the smooth part of the variety, and ![P_k(\Sigma_p)](https://latex.codecogs.com/svg.image?P_k(\Sigma_p)) represents the persistence intervals associated with the link ![L(p)](https://latex.codecogs.com/svg.image?L(p)) of the singular point ![p \in \Sigma](https://latex.codecogs.com/svg.image?p\in%20\Sigma).
+
+For a singular variety X with singular set Σ, the total persistent homology can be expressed as a union of persistence intervals from the smooth part and the singular part. Formally, the persistence intervals in dimension k are given by:
+
+Pₖ(X) = Pₖ(X ∖ Σ) ∪ \bigcup_{p ∈ Σ} Pₖ(Σₚ)
+
+where Pₖ(X ∖ Σ) represents the persistence intervals associated with the smooth part of the variety, and Pₖ(Σₚ) represents the persistence intervals associated with the link L(p) of the singular point p ∈ Σ.
 
 This formulation captures the persistent homology of the entire variety by combining the contributions from the smooth regions and the singular points.
 
@@ -196,33 +226,38 @@ The solution we have developed provides a rigorous framework for computing persi
 ### Formal Examples:
 
 #### 1. Example: Persistent Homology of the Sierpiński Gasket
-Consider the Sierpiński Gasket, a classic fractal with a Hausdorff dimension ![d_H \approx 1.585](https://latex.codecogs.com/svg.image?d_H\approx1.585). We construct a filtration of the Sierpiński Gasket by recursively subdividing its triangular structure, and we compute the persistent homology of the resulting approximation.
 
-- Connected Components (![H_0](https://latex.codecogs.com/svg.image?H_0)): At small scales, each of the small triangles forming the Sierpiński Gasket is disconnected, resulting in multiple connected components. As the filtration progresses, these components merge until only one connected component remains.
-- Loops (![H_1](https://latex.codecogs.com/svg.image?H_1)): The recursive removal of the interior of each triangle results in the formation of loops. These loops persist across scales and reflect the self-similar structure of the Sierpiński Gasket. The persistence intervals for ![H_1](https://latex.codecogs.com/svg.image?H_1) reflect this quasi-periodic structure, with loops appearing and disappearing at regular intervals due to the recursive geometry of the fractal.
+Consider the Sierpiński Gasket, a classic fractal with a Hausdorff dimension dₕ ≈ 1.585. We construct a filtration of the Sierpiński Gasket by recursively subdividing its triangular structure, and we compute the persistent homology of the resulting approximation.
 
-The closed-form expression for the persistence intervals of ![H_1](https://latex.codecogs.com/svg.image?H_1) is periodic, reflecting the scaling factor ![s = 1/2](https://latex.codecogs.com/svg.image?s=1/2) of the fractal. The persistence intervals are given by:
-![P_1(F) = \left\{ C_1 \cdot 2^{-n} \mid n \in \mathbb{Z} \right\}](https://latex.codecogs.com/svg.image?P_1(F)%20=%20\left\{C_1%20\cdot%202^{-n}%20\mid%20n\in%20\mathbb{Z}%20\right\}),
-where ![C_1](https://latex.codecogs.com/svg.image?C_1) represents the initial scale of the filtration.
+- Connected Components (H₀): At small scales, each of the small triangles forming the Sierpiński Gasket is disconnected, resulting in multiple connected components. As the filtration progresses, these components merge until only one connected component remains.
+- Loops (H₁): The recursive removal of the interior of each triangle results in the formation of loops. These loops persist across scales and reflect the self-similar structure of the Sierpiński Gasket. The persistence intervals for H₁ reflect this quasi-periodic structure, with loops appearing and disappearing at regular intervals due to the recursive geometry of the fractal.
+
+The closed-form expression for the persistence intervals of H₁ is periodic, reflecting the scaling factor s = 1/2 of the fractal. The persistence intervals are given by:
+
+P₁(F) = { C₁ ⋅ 2^{-n} ∣ n ∈ ℤ }
+
+where C₁ represents the initial scale of the filtration.
 
 #### 2. Example: Persistent Homology of a Polyhedral Complex
+
 Consider a polyhedral complex composed of a collection of triangular faces, such as a simplicial approximation of a three-dimensional object. The persistent homology of this polyhedral complex can be computed using discrete Morse theory, where the critical simplices correspond to the vertices, edges, and faces of the polyhedron.
 
-- Connected Components (![H_0](https://latex.codecogs.com/svg.image?H_0)): Critical 0-cells correspond to vertices in the polyhedral complex. As edges are added to the filtration, these vertices merge into connected components.
-- Loops (![H_1](https://latex.codecogs.com/svg.image?H_1)): Loops are formed when a set of edges encloses a triangular face, corresponding to critical 1-cells. These loops persist until the triangular face is added to the filtration, at which point the loop is filled and the homology class dies.
-- Voids (![H_2](https://latex.codecogs.com/svg.image?H_2)): Critical 2-cells correspond to the triangular faces of the polyhedral complex. These faces enclose three-dimensional regions, and their persistence reflects the appearance and disappearance of voids in the space.
+- Connected Components (H₀): Critical 0-cells correspond to vertices in the polyhedral complex. As edges are added to the filtration, these vertices merge into connected components.
+- Loops (H₁): Loops are formed when a set of edges encloses a triangular face, corresponding to critical 1-cells. These loops persist until the triangular face is added to the filtration, at which point the loop is filled and the homology class dies.
+- Voids (H₂): Critical 2-cells correspond to the triangular faces of the polyhedral complex. These faces enclose three-dimensional regions, and their persistence reflects the appearance and disappearance of voids in the space.
 
-The persistence intervals for ![H_1](https://latex.codecogs.com/svg.image?H_1) and ![H_2](https://latex.codecogs.com/svg.image?H_2) are determined by the discrete Morse function on the polyhedral complex, with the intervals reflecting the combinatorial structure of the complex.
+The persistence intervals for H₁ and H₂ are determined by the discrete Morse function on the polyhedral complex, with the intervals reflecting the combinatorial structure of the complex.
 
 #### 3. Example: Singular Variety with a Nodal Singularity
-Consider an algebraic variety ![X](https://latex.codecogs.com/svg.image?X) with a nodal singularity at a point ![p \in X](https://latex.codecogs.com/svg.image?p\in%20X). The homology near the nodal point is not captured by classical homology theory, but intersection homology allows us to compute the topological features associated with the singularity.
 
-The link of the nodal singularity ![L(p)](https://latex.codecogs.com/svg.image?L(p)) is a circle, and the homology of this link reflects the local topology near the singular point. Using spectral sequences, we compute how the homology classes evolve near the singularity as the filtration progresses.
+Consider an algebraic variety X with a nodal singularity at a point p ∈ X. The homology near the nodal point is not captured by classical homology theory, but intersection homology allows us to compute the topological features associated with the singularity.
+
+The link of the nodal singularity L(p) is a circle, and the homology of this link reflects the local topology near the singular point. Using spectral sequences, we compute how the homology classes evolve near the singularity as the filtration progresses.
 
 - Persistent Homology of the Smooth Part: Away from the singular point, the variety behaves like a smooth surface, and the persistent homology is governed by classical homology theory.
-- Persistent Homology Near the Singular Point: Near the nodal singularity, the homology classes are influenced by the link ![L(p)](https://latex.codecogs.com/svg.image?L(p)). The persistence intervals for homology classes near the singularity are given by:
-  
-![P_k(\Sigma)](https://latex.codecogs.com/svg.image?P_k(\Sigma)) = { ![[b_i, d_i)](https://latex.codecogs.com/svg.image?[b_i,%20d_i)) | b<sub>i</sub> and d<sub>i</sub> are determined by ![H_k(L(\Sigma))](https://latex.codecogs.com/svg.image?H_k(L(\Sigma))) and the differentials ![d_r](https://latex.codecogs.com/svg.image?d_r) }.
+- Persistent Homology Near the Singular Point: Near the nodal singularity, the homology classes are influenced by the link L(p). The persistence intervals for homology classes near the singularity are given by:
+
+Pₖ(Σ) = { [bᵢ, dᵢ) ∣ bᵢ and dᵢ are determined by Hₖ(L(Σ)) and the differentials dᵣ }
 
 These intervals reflect the interaction between the homology of the smooth part of the variety and the topological structure of the singular point.
 
