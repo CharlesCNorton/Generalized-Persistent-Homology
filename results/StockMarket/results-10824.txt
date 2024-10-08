@@ -1,0 +1,106 @@
+Symbols used:"^GSPC", "^DJI", "^NDX", "^RUT", "XLF", "IYR", "BAC", "JPM", "C", "AIG", "GS", "GLD"
+
+Date range: "2005-01-01", "2010-12-31"
+
+Topological Transitions Detected (across indices):
+^GSPC Transitions:
+  Birth: 0.060, Death: 0.116
+^DJI Transitions:
+  Birth: 0.063, Death: 0.112
+^NDX Transitions:
+  Birth: 0.064, Death: 0.102
+^RUT Transitions:
+  Birth: 0.069, Death: 0.116
+XLF Transitions:
+  Birth: 0.089, Death: 0.131
+  Birth: 0.042, Death: 0.078
+IYR Transitions:
+  Birth: 0.066, Death: 0.109
+BAC Transitions:
+  Birth: 0.149, Death: 0.201
+JPM Transitions:
+  Birth: 0.143, Death: 0.221
+  Birth: 0.105, Death: 0.188
+  Birth: 0.081, Death: 0.131
+C Transitions:
+  No significant transitions detected.
+AIG Transitions:
+  No significant transitions detected.
+GS Transitions:
+  Birth: 0.086, Death: 0.128
+GLD Transitions:
+  No significant transitions detected.
+
+Additional Financial Statistics:
+
+^GSPC Additional Statistics:
+Max Price Increase: 104.130
+Max Price Decrease: -106.850
+Volatility (Std Dev of Returns): 15.563
+Total Number of Topological Features Detected: 24
+
+^DJI Additional Statistics:
+Max Price Increase: 936.420
+Max Price Decrease: -777.680
+Volatility (Std Dev of Returns): 132.704
+Total Number of Topological Features Detected: 24
+
+^NDX Additional Statistics:
+Max Price Increase: 159.740
+Max Price Decrease: -175.890
+Volatility (Std Dev of Returns): 24.516
+Total Number of Topological Features Detected: 24
+
+^RUT Additional Statistics:
+Max Price Increase: 48.410
+Max Price Decrease: -56.070
+Volatility (Std Dev of Returns): 10.864
+Total Number of Topological Features Detected: 24
+
+XLF Additional Statistics:
+Max Price Increase: 1.537
+Max Price Decrease: -1.694
+Volatility (Std Dev of Returns): 0.270
+Total Number of Topological Features Detected: 24
+
+IYR Additional Statistics:
+Max Price Increase: 3.111
+Max Price Decrease: -3.836
+Volatility (Std Dev of Returns): 0.663
+Total Number of Topological Features Detected: 24
+
+BAC Additional Statistics:
+Max Price Increase: 5.357
+Max Price Decrease: -6.561
+Volatility (Std Dev of Returns): 0.622
+Total Number of Topological Features Detected: 24
+
+JPM Additional Statistics:
+Max Price Increase: 4.477
+Max Price Decrease: -4.802
+Volatility (Std Dev of Returns): 0.737
+Total Number of Topological Features Detected: 24
+
+C Additional Statistics:
+Max Price Increase: 30.320
+Max Price Decrease: -31.457
+Volatility (Std Dev of Returns): 4.228
+Total Number of Topological Features Detected: 24
+
+AIG Additional Statistics:
+Max Price Increase: 49.189
+Max Price Decrease: -95.281
+Volatility (Std Dev of Returns): 10.202
+Total Number of Topological Features Detected: 24
+
+GS Additional Statistics:
+Max Price Increase: 18.657
+Max Price Decrease: -18.285
+Volatility (Std Dev of Returns): 2.941
+Total Number of Topological Features Detected: 24
+
+GLD Additional Statistics:
+Max Price Increase: 8.670
+Max Price Decrease: -6.680
+Volatility (Std Dev of Returns): 1.131
+Total Number of Topological Features Detected: 24
