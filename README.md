@@ -25,10 +25,10 @@ The objective is to characterize the persistent homology of such a space 𝑿. S
 
 #### 1. Behavior of Homological Features Under Persistent Homology:
 How do the homological features of a space 𝑿 evolve under persistent homology as a function of a filtration parameter? We are interested in analyzing the birth, persistence, and death of topological features, including:
-- ![H_0](https://latex.codecogs.com/svg.image?H_0) (connected components),
-- ![H_1](https://latex.codecogs.com/svg.image?H_1) (loops),
-- ![H_2](https://latex.codecogs.com/svg.image?H_2) (voids),
-- and more generally, higher-dimensional homology classes ![H_k](https://latex.codecogs.com/svg.image?H_k).
+- H₀ (connected components),
+- H₁ (loops),
+- H₂ (voids),
+- and more generally, higher-dimensional homology classes Hₖ
 
 #### 2. Theoretical Guarantees:
 What theoretical guarantees can we provide about the persistence intervals of these homological features, especially given the geometric and topological complexity of the space? In particular, we aim to determine when features are born, how long they persist, and when they die, across various scales in these spaces.
@@ -50,7 +50,7 @@ The solution to this problem is divided into three parts corresponding to the th
 
 #### I. Persistent Homology for Fractal Sets
 
-Let ![F](https://latex.codecogs.com/svg.image?F) be a fractal set, such as the Sierpiński gasket or the Cantor set. Fractal sets are characterized by their self-similarity across multiple scales and their non-integer Hausdorff dimension ![d_H](https://latex.codecogs.com/svg.image?d_H). The recursive geometry of fractals poses unique challenges for classical homology, but the periodic structure of fractals provides an avenue for predicting the evolution of topological features.
+Let F be a fractal set, such as the Sierpiński gasket or the Cantor set. Fractal sets are characterized by their self-similarity across multiple scales and their non-integer Hausdorff dimension dₕ. The recursive geometry of fractals poses unique challenges for classical homology, but the periodic structure of fractals provides an avenue for predicting the evolution of topological features.
 
 ##### 1.1 Filtration Process for Fractals
 We construct a filtration ![\{F_t\}_{t \geq 0}](https://latex.codecogs.com/svg.image?\{F_t\}_{t%20\geq%200}) of the fractal set ![F](https://latex.codecogs.com/svg.image?F), where each ![F_t](https://latex.codecogs.com/svg.image?F_t) represents a finer approximation of the fractal, built by scaling down the fractal by a factor ![s](https://latex.codecogs.com/svg.image?s). The recursive structure of fractals ensures that their homology groups exhibit periodic or quasi-periodic behavior under this filtration.
