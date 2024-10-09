@@ -3,7 +3,7 @@
 
 By: Charles Norton & GPT-4 
 
-Last Updated: October 6th, 2024
+Last Updated: October 8th, 2024
 
 In modern topological data analysis (TDA), persistent homology has emerged as a powerful tool for extracting and understanding the underlying topological features of complex spaces. By studying how homological features such as connected components, cycles, and voids appear and disappear across different scales, persistent homology allows us to capture the essence of spaces that exhibit intricate and high-dimensional structures.
 
