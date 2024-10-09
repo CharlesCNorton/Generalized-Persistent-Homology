@@ -1,0 +1,93 @@
+Running tests for complexity level: 1
+--- Statistical Summary for Singular Framework (Complexity 1) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.14156491282196149, 'std_lifespan': 0.03342822243694458, 'max_lifespan': 0.31573033332824707, 'min_lifespan': 0.03276472166180611, 'normality_ks_stat': 0.05902951475737869, 'normality_ks_p': 0.001883466338758408}
+H_1 (Loops): {'count': 1883, 'mean_lifespan': 0.025701076120723768, 'std_lifespan': 0.02083776114635609, 'max_lifespan': 0.11548414826393127, 'min_lifespan': 7.867813110351562e-06, 'normality_ks_stat': 0.13595326606479022, 'normality_ks_p': 1.3898527126227582e-15}
+--- Statistical Summary for Non-smooth Framework (Complexity 1) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.10873337040653917, 'std_lifespan': 0.09397133418807162, 'max_lifespan': 0.32884481549263, 'min_lifespan': 0.005125808529555798, 'normality_ks_stat': 0.2846423211605803, 'normality_ks_p': 9.962803557204848e-72}
+H_1 (Loops): {'count': 1798, 'mean_lifespan': 0.02003381305060311, 'std_lifespan': 0.026170283595182184, 'max_lifespan': 0.1352015733718872, 'min_lifespan': 9.745359420776367e-06, 'normality_ks_stat': 0.2296996662958843, 'normality_ks_p': 5.531820276995676e-42}
+--- Statistical Summary for Fractal Framework (Complexity 1) ---
+H_0 (Connected Components): {'count': 5, 'mean_lifespan': 0.6593080997467041, 'std_lifespan': 0.07709802931074784, 'max_lifespan': 0.7537335157394409, 'min_lifespan': 0.5963578224182129, 'normality_ks_stat': 0.4, 'normality_ks_p': 0.873015873015873}
+H_1 (Loops): {'count': 1, 'mean_lifespan': 0.027973413467407227, 'std_lifespan': 0.0, 'max_lifespan': 0.027973413467407227, 'min_lifespan': 0.027973413467407227, 'normality_ks_stat': 0.0, 'normality_ks_p': 1.0}
+--- Statistical Summary for Hybrid Framework (Complexity 1) ---
+H_0 (Connected Components): {'count': 1005, 'mean_lifespan': 0.1690558627284878, 'std_lifespan': 0.03833417081475646, 'max_lifespan': 0.3390868306159973, 'min_lifespan': 0.04913576692342758, 'normality_ks_stat': 0.04378109452736319, 'normality_ks_p': 0.2905573687523965}
+H_1 (Loops): {'count': 920, 'mean_lifespan': 0.02976913636793261, 'std_lifespan': 0.024130252425638807, 'max_lifespan': 0.11115683615207672, 'min_lifespan': 4.1097402572631836e-05, 'normality_ks_stat': 0.11304347826086956, 'normality_ks_p': 1.538505029777e-05}
+--- Statistical Summary for Curvature Framework (Complexity 1) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.13079168027192434, 'std_lifespan': 0.06446353780697861, 'max_lifespan': 0.35556018352508545, 'min_lifespan': 1.255192845896628e-16, 'normality_ks_stat': 0.04952476238119059, 'normality_ks_p': 0.014837711617794673}
+H_1 (Loops): {'count': 1753, 'mean_lifespan': 0.023113037319561703, 'std_lifespan': 0.021384100183817978, 'max_lifespan': 0.1402277648448944, 'min_lifespan': 2.088025212287903e-06, 'normality_ks_stat': 0.1488876212207644, 'normality_ks_p': 2.325121080887822e-17}
+--- Statistical Summary for Control Framework (Complexity 1) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.16571734183695747, 'std_lifespan': 0.037437112986685776, 'max_lifespan': 0.28064584732055664, 'min_lifespan': 0.03793111816048622, 'normality_ks_stat': 0.04752376188094047, 'normality_ks_p': 0.021880004153435842}
+H_1 (Loops): {'count': 1866, 'mean_lifespan': 0.03237634381361202, 'std_lifespan': 0.025998864351157065, 'max_lifespan': 0.11642582714557648, 'min_lifespan': 1.7881393432617188e-05, 'normality_ks_stat': 0.11093247588424437, 'normality_ks_p': 2.043849591865179e-10}
+Running tests for complexity level: 2
+--- Statistical Summary for Singular Framework (Complexity 2) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.13042162911218216, 'std_lifespan': 0.031553416690441004, 'max_lifespan': 0.3073005676269531, 'min_lifespan': 0.020664790645241737, 'normality_ks_stat': 0.04752376188094047, 'normality_ks_p': 0.021880004153435842}
+H_1 (Loops): {'count': 1978, 'mean_lifespan': 0.02207800623922184, 'std_lifespan': 0.017557371450126417, 'max_lifespan': 0.08308292925357819, 'min_lifespan': 1.7970800399780273e-05, 'normality_ks_stat': 0.09706774519716886, 'normality_ks_p': 1.5717282662927578e-08}
+--- Statistical Summary for Non-smooth Framework (Complexity 2) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.11802204158515849, 'std_lifespan': 0.08470675817402064, 'max_lifespan': 0.33942046761512756, 'min_lifespan': 0.0040188999846577644, 'normality_ks_stat': 0.27013506753376687, 'normality_ks_p': 1.4851264619573567e-64}
+H_1 (Loops): {'count': 1794, 'mean_lifespan': 0.021221142056644163, 'std_lifespan': 0.024972734720047733, 'max_lifespan': 0.13007505238056183, 'min_lifespan': 3.635883331298828e-06, 'normality_ks_stat': 0.1978818283166109, 'normality_ks_p': 3.972582307566181e-31}
+--- Statistical Summary for Fractal Framework (Complexity 2) ---
+H_0 (Connected Components): {'count': 15, 'mean_lifespan': 0.36221002480806264, 'std_lifespan': 0.09710862186847874, 'max_lifespan': 0.40064650774002075, 'min_lifespan': 2.107342389479072e-08, 'normality_ks_stat': 0.6, 'normality_ks_p': 0.007655808318750842}
+H_1 (Loops): {'count': 6, 'mean_lifespan': 0.0511871874332428, 'std_lifespan': 0.0, 'max_lifespan': 0.0511871874332428, 'min_lifespan': 0.0511871874332428, 'normality_ks_stat': 0.0, 'normality_ks_p': 1.0}
+--- Statistical Summary for Hybrid Framework (Complexity 2) ---
+H_0 (Connected Components): {'count': 1014, 'mean_lifespan': 0.1543230639414263, 'std_lifespan': 0.03710180149122078, 'max_lifespan': 0.3115057647228241, 'min_lifespan': 0.04481656104326248, 'normality_ks_stat': 0.0650887573964497, 'normality_ks_p': 0.02722472845443113}
+H_1 (Loops): {'count': 917, 'mean_lifespan': 0.026065829365373046, 'std_lifespan': 0.020719656685243962, 'max_lifespan': 0.1084182858467102, 'min_lifespan': 9.052455425262451e-05, 'normality_ks_stat': 0.10141766630316248, 'normality_ks_p': 0.00015849876339383371}
+--- Statistical Summary for Curvature Framework (Complexity 2) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.12917993471846162, 'std_lifespan': 0.06432698226242353, 'max_lifespan': 0.36674946546554565, 'min_lifespan': 1.5462790269430186e-16, 'normality_ks_stat': 0.02501250625312656, 'normality_ks_p': 0.5593505365700515}
+H_1 (Loops): {'count': 1765, 'mean_lifespan': 0.02315387488698993, 'std_lifespan': 0.021578817493563968, 'max_lifespan': 0.14741235971450806, 'min_lifespan': 1.8581748008728027e-05, 'normality_ks_stat': 0.14447592067988668, 'normality_ks_p': 1.7761445315469953e-16}
+--- Statistical Summary for Control Framework (Complexity 2) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.1680320197452659, 'std_lifespan': 0.03639056950974739, 'max_lifespan': 0.32604750990867615, 'min_lifespan': 0.03257811814546585, 'normality_ks_stat': 0.0400200100050025, 'normality_ks_p': 0.08138419577727432}
+H_1 (Loops): {'count': 1897, 'mean_lifespan': 0.03243002243650293, 'std_lifespan': 0.025746844760333096, 'max_lifespan': 0.116457000374794, 'min_lifespan': 4.634261131286621e-06, 'normality_ks_stat': 0.10806536636794939, 'normality_ks_p': 4.609638089631594e-10}
+Running tests for complexity level: 3
+--- Statistical Summary for Singular Framework (Complexity 3) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.11770236557288996, 'std_lifespan': 0.03265170297872143, 'max_lifespan': 0.3039972186088562, 'min_lifespan': 0.02769397385418415, 'normality_ks_stat': 0.04352176088044022, 'normality_ks_p': 0.04534270721165801}
+H_1 (Loops): {'count': 1908, 'mean_lifespan': 0.019407992085258417, 'std_lifespan': 0.015472264826729424, 'max_lifespan': 0.07706612348556519, 'min_lifespan': 1.773238182067871e-06, 'normality_ks_stat': 0.10534591194968554, 'normality_ks_p': 1.2313655553483347e-09}
+--- Statistical Summary for Non-smooth Framework (Complexity 3) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.12698202658903082, 'std_lifespan': 0.07617322534065545, 'max_lifespan': 0.31612399220466614, 'min_lifespan': 0.011285385116934776, 'normality_ks_stat': 0.21060530265132565, 'normality_ks_p': 3.2688945880487434e-39}
+H_1 (Loops): {'count': 1817, 'mean_lifespan': 0.02378803981600322, 'std_lifespan': 0.02558974711015285, 'max_lifespan': 0.12993814051151276, 'min_lifespan': 3.039836883544922e-06, 'normality_ks_stat': 0.17721518987341772, 'normality_ks_p': 2.479203944757867e-25}
+--- Statistical Summary for Fractal Framework (Complexity 3) ---
+H_0 (Connected Components): {'count': 47, 'mean_lifespan': 0.15301269527896083, 'std_lifespan': 0.04895029636883831, 'max_lifespan': 0.2254493087530136, 'min_lifespan': 1.4901161193847656e-08, 'normality_ks_stat': 0.425531914893617, 'normality_ks_p': 0.00033684748872850594}
+H_1 (Loops): {'count': 28, 'mean_lifespan': 0.020072907209396362, 'std_lifespan': 0.0, 'max_lifespan': 0.020072907209396362, 'min_lifespan': 0.020072907209396362, 'normality_ks_stat': 0.0, 'normality_ks_p': 1.0}
+--- Statistical Summary for Hybrid Framework (Complexity 3) ---
+H_0 (Connected Components): {'count': 1052, 'mean_lifespan': 0.12904372275272927, 'std_lifespan': 0.04362662619986126, 'max_lifespan': 0.2919815182685852, 'min_lifespan': 1.4901161193847656e-08, 'normality_ks_stat': 0.0655893536121673, 'normality_ks_p': 0.02163127772057064}
+H_1 (Loops): {'count': 921, 'mean_lifespan': 0.020877713121142113, 'std_lifespan': 0.017172985812471703, 'max_lifespan': 0.08485671877861023, 'min_lifespan': 0.00010722875595092773, 'normality_ks_stat': 0.13246471226927253, 'normality_ks_p': 1.8437462082467285e-07}
+--- Statistical Summary for Curvature Framework (Complexity 3) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.13012070514874607, 'std_lifespan': 0.06407469947636277, 'max_lifespan': 0.4061623513698578, 'min_lifespan': 1.0534743979626296e-16, 'normality_ks_stat': 0.030015007503751877, 'normality_ks_p': 0.3288758405955082}
+H_1 (Loops): {'count': 1816, 'mean_lifespan': 0.022286828084733944, 'std_lifespan': 0.021276163411890404, 'max_lifespan': 0.12360616028308868, 'min_lifespan': 2.714991569519043e-05, 'normality_ks_stat': 0.1486784140969163, 'normality_ks_p': 6.4138661893841354e-18}
+--- Statistical Summary for Control Framework (Complexity 3) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.1681377718596905, 'std_lifespan': 0.03734168654755653, 'max_lifespan': 0.32156869769096375, 'min_lifespan': 0.02414054423570633, 'normality_ks_stat': 0.04202101050525263, 'normality_ks_p': 0.05861301136491571}
+H_1 (Loops): {'count': 1921, 'mean_lifespan': 0.03209750246467968, 'std_lifespan': 0.025448477021370593, 'max_lifespan': 0.11915470659732819, 'min_lifespan': 4.217028617858887e-06, 'normality_ks_stat': 0.10879750130140552, 'normality_ks_p': 2.563055422968212e-10}
+Running tests for complexity level: 4
+--- Statistical Summary for Singular Framework (Complexity 4) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.10375073212215219, 'std_lifespan': 0.03275385939433258, 'max_lifespan': 0.33493492007255554, 'min_lifespan': 0.019904673099517822, 'normality_ks_stat': 0.08054027013506754, 'normality_ks_p': 4.622206717771114e-06}
+H_1 (Loops): {'count': 1951, 'mean_lifespan': 0.016814788409161726, 'std_lifespan': 0.013336163129129672, 'max_lifespan': 0.07452912628650665, 'min_lifespan': 1.4483928680419922e-05, 'normality_ks_stat': 0.09943618657098924, 'normality_ks_p': 8.156738864782222e-09}
+--- Statistical Summary for Non-smooth Framework (Complexity 4) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.13512271214714494, 'std_lifespan': 0.06756953890123765, 'max_lifespan': 0.34553197026252747, 'min_lifespan': 0.017005443572998047, 'normality_ks_stat': 0.17408704352176088, 'normality_ks_p': 7.288249242297234e-27}
+H_1 (Loops): {'count': 1724, 'mean_lifespan': 0.025133746464384543, 'std_lifespan': 0.02520437726885671, 'max_lifespan': 0.15797729790210724, 'min_lifespan': 1.4916062355041504e-05, 'normality_ks_stat': 0.15777262180974477, 'normality_ks_p': 3.899612970200843e-19}
+--- Statistical Summary for Fractal Framework (Complexity 4) ---
+H_0 (Connected Components): {'count': 215, 'mean_lifespan': 0.058151285849233306, 'std_lifespan': 0.03748603540571256, 'max_lifespan': 0.08886073529720306, 'min_lifespan': 1.4901161193847656e-08, 'normality_ks_stat': 0.4186046511627907, 'normality_ks_p': 2.925008549330307e-17}
+H_1 (Loops): {'count': 126, 'mean_lifespan': 0.016315629627234696, 'std_lifespan': 0.0036482831475799205, 'max_lifespan': 0.017131410539150238, 'min_lifespan': 6.172262700943065e-09, 'normality_ks_stat': 0.5714285714285714, 'normality_ks_p': 2.460363139659266e-19}
+--- Statistical Summary for Hybrid Framework (Complexity 4) ---
+H_0 (Connected Components): {'count': 1228, 'mean_lifespan': 0.11037209217060376, 'std_lifespan': 0.05698486804060377, 'max_lifespan': 0.34727346897125244, 'min_lifespan': 1.053671194739536e-08, 'normality_ks_stat': 0.10097719869706841, 'normality_ks_p': 7.179590419257312e-06}
+H_1 (Loops): {'count': 1010, 'mean_lifespan': 0.018861625616503234, 'std_lifespan': 0.016625112366999303, 'max_lifespan': 0.08316710591316223, 'min_lifespan': 4.813075065612793e-06, 'normality_ks_stat': 0.13267326732673268, 'normality_ks_p': 3.6399136330541887e-08}
+--- Statistical Summary for Curvature Framework (Complexity 4) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.12982745000654847, 'std_lifespan': 0.0650885209187286, 'max_lifespan': 0.3443640470504761, 'min_lifespan': 1.7740391719681055e-16, 'normality_ks_stat': 0.04302151075537769, 'normality_ks_p': 0.04944305493926189}
+H_1 (Loops): {'count': 1719, 'mean_lifespan': 0.023352395489036067, 'std_lifespan': 0.022463129594114194, 'max_lifespan': 0.14283058047294617, 'min_lifespan': 9.5367431640625e-06, 'normality_ks_stat': 0.15357766143106458, 'normality_ks_p': 4.246963211544446e-18}
+--- Statistical Summary for Control Framework (Complexity 4) ---
+H_0 (Connected Components): {'count': 1999, 'mean_lifespan': 0.16803938295764884, 'std_lifespan': 0.03627820056711364, 'max_lifespan': 0.30726391077041626, 'min_lifespan': 0.033239830285310745, 'normality_ks_stat': 0.02801400700350175, 'normality_ks_p': 0.4129173251027546}
+H_1 (Loops): {'count': 1885, 'mean_lifespan': 0.032466590530992503, 'std_lifespan': 0.025921696721481317, 'max_lifespan': 0.1206769347190857, 'min_lifespan': 1.8224120140075684e-05, 'normality_ks_stat': 0.10663129973474801, 'normality_ks_p': 9.49743257852283e-10}
+C:\Program Files\Python311\Lib\site-packages\scipy\stats\_axis_nan_policy.py:531: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  res = hypotest_fun_out(*samples, **kwds)
+All differences for count are zero. Skipping Wilcoxon test.
+
+--- Null Hypothesis Testing Results ---
+
+For statistic: mean_lifespan
+T-test statistic: -5.397127218172606, P-value: 0.0016684077947105233
+Wilcoxon signed-rank statistic: 0.0, P-value: 0.125
+
+For statistic: count
+T-test statistic: nan, P-value: nan
+Wilcoxon signed-rank statistic: nan, P-value: nan
+
+For statistic: std_lifespan
+T-test statistic: -8.62924607096116, P-value: 0.00013336299831842396
+Wilcoxon signed-rank statistic: 0.0, P-value: 0.125
